@@ -1,0 +1,91 @@
+.div1{
+    background: #000000;  
+    background: -webkit-linear-gradient(to right, #434343, #000000);  
+    background: linear-gradient(to right, #434343, #000000); 
+  }
+  
+  button{
+    margin-right: 5px;
+    
+  }
+  
+  .imagenes{
+    width:15%;
+  }
+  .imagenes1{
+    width:20%;
+  }
+  .imagenes3{
+    width:10%;
+  }
+  
+  
+  #education {
+    padding: 50px 15px 20px 15px;
+    border-bottom: 1px solid #454549;
+    text-align: center;
+    
+  }
+  
+  #education h2 {
+    color: #fafafa;
+    margin-bottom: 50px
+  }
+  
+  .education-block {
+    background-color: rgb(175, 176, 179);
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    padding: 15px;
+    border: 1px solid #000000;
+    text-align: left;
+    box-shadow:10px 10px 30px rgb(0, 0, 0);
+    border-radius: 14px;
+  }
+  
+  .education-block h3 {
+    font-weight: 500;
+    float: left;
+    margin: 0;
+    color: #000000
+  }
+  
+  .education-block span {
+    color: #0b0c0c;
+    float: right
+  }
+  
+  .education-block h4 {
+    color: #d9dfe4;
+    clear: both;
+    font-weight: 500;
+    margin: 0 0 15px 0
+  }
+  
+  .education-block p,
+  .education-block ul {
+    margin: 0;
+    color: #74808a;
+    font-size: 0.9em
+  }
+  
+  .education-block ul {
+    padding: 0 0 0 15px
+  }
+  
+  h2{
+    display: inline;
+    font-family: 'Rubik', sans-serif;
+  }
+  @media (max-width: 575.98px) { 
+    h1{font-size:40px; line-height:normal;}
+    .products-details h2{font-size: 40px;}
+    .armar{min-width: unset; padding: 40px ;}
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) { 
+    .products-details h2 { font-size: 30px; }
+    .armar { min-width: unset; padding: 40px 20px;}
+  }
+  
+  
+  
