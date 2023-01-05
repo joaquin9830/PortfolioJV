@@ -12,6 +12,12 @@ body{
     background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+.heading{
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  color:#fff;
+  margin-bottom:auto;
+}
 ::selection{
   color: #fff;
   background: #b9b6b6;
