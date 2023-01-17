@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 *{
     
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+
   }
 html{
   scroll-behavior: smooth;
@@ -21,6 +22,14 @@ body{
 ::selection{
   color: #fff;
   background: #b9b6b6;
+}
+p{
+  font-size:20px;
+  color:#000000;
+}
+h2{
+  color:#fff;
+  text-align: center;
 }
 .wrapper{
   max-width: 1080px;
@@ -48,7 +57,7 @@ body{
 }
 .wrapper .row section{
   background: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
   width: calc(50% - 40px);
   padding: 20px;
   position: relative;
@@ -108,6 +117,7 @@ body{
 }
 .row section p{
   margin: 10px 0 17px 0;
+  
 }
 .row section .bottom a{
   text-decoration: none;
@@ -119,6 +129,7 @@ body{
   font-weight: 400;
   transition: all 0.3s ease;
 }
+
 .row section .bottom a:hover{
   transform: scale(0.97);
 }
