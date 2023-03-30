@@ -1,12 +1,16 @@
-
-.logo-brand{
-    min-width:160px;
-    max-width:180px ;
+nav{
+    padding:10px;
+    
 }
+.logo-brand {
+    min-width:160px;
+    max-width:180px;
+}
+
 
 #Banner {
     position: relative;
-    height: 100vh;
+    height: 80vh;
     min-height: 450px;
     max-height: 1080px;
     background: url('../../../assets/pc4.png');
@@ -14,19 +18,21 @@
     padding: 15px;
     padding-top: 90px;
     overflow: hidden;
-    font-family: 'Rubik', sans-serif;
-    
+    font-family: 'Maven Pro', sans-serif;
+
 }
 
-li{
+li {
     font-family: 'Rubik', sans-serif;
 }
+
 .bi {
     font-size: 28px;
-    
-    
-  }
-  #lead-overlay {
+   
+
+}
+
+#lead-overlay {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -37,17 +43,19 @@ li{
     background: rgba(126, 141, 147, 0.8);
     z-index: 1
 }
+
 #lead-content h1 {
     max-width: 800px;
     margin: 0 auto 60px auto;
     text-align: center;
     color: #fff;
-    font-weight: 900;
-    font-size: 5em;
+    font-weight: 850;
+    font-size: 4.5em;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     line-height: 0.9em
 }
+
 #lead-content h3 {
     color: #fdfdfd;
     text-align: center;
@@ -76,19 +84,4 @@ li{
     padding-top: 5px;
     color: #fff;
 }
-button{
-    background: rgb(146, 126, 126);
-    color:white;
-    text-decoration: none;
-    border: 2px solid  transparent;
-    font-weight: bold;
-    padding: 13px 30px;
-    border-radius: 30px;
-    transition: .4s;
-}
 
-button:hover{
-    background:transparent;
-    border:2px solid rgb(71, 66, 66);
-    cursor: pointer;
-}

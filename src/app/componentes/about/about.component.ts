@@ -11,10 +11,10 @@ import { PersonaService } from 'src/app/service/persona.service';
 export class AboutComponent {
   persona: persona = new persona("","","");
 
-  constructor(public personaService: PersonaService, private router:Router){}
+  constructor(private router:Router){}
   
   ngOnInit(){
-    this.personaService.getPersona().subscribe(data =>{this.persona = data})
+    
   }
   contact(){
     this.router.navigate(['/contact']);

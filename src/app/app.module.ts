@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
+//Inicio Services
+import {CargarScriptsService} from '../app/service/cargar-scripts.service';
+//Fin services
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComponentesComponent } from './componentes/componentes.component';
@@ -37,7 +41,9 @@ import { ContactComponent } from './componentes/contact/contact.component';
     NgCircleProgressModule.forRoot({}),
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    CargarScriptsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

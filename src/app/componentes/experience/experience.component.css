@@ -8,6 +8,8 @@
 
 
 
+
+
 button {
   margin-right: 5px;
 
@@ -44,8 +46,14 @@ button {
   text-align: left;
   box-shadow: 10px 10px 30px rgb(0, 0, 0);
   border-radius: 14px;
- 
+  transition: 0.5s;
+  object-fit: cover;
+  cursor: pointer;
 
+}
+
+.education-block:hover{
+  transform: scale(1.2)
 }
 
 .education-block h3 {
@@ -112,3 +120,4 @@ h2 {
     padding: 40px 20px;
   }
 }
+
