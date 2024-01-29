@@ -88,7 +88,8 @@ li {
 
 
 #lead-content h1,
-#lead-content h3 {
+#lead-content h3,
+#lead-content button {
     animation: fadeIn 1s ease-in-out; /* Aplicar la animación fadeIn */
 }
 #start-button {
