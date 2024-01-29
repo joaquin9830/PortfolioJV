@@ -4,29 +4,22 @@
     bottom: 20px; /* Ajusta la posición vertical según tus preferencias */
     right: 20px; /* Ajusta la posición horizontal según tus preferencias */
     display: none; /* Oculta el botón inicialmente */
+    background: rgb(146, 126, 126);
+    color: white;
+    border: 2px solid transparent;
+    padding: 5px 20px;
+    
   }
-  
+
+
+  button:hover{
+    background: solid;
+    border: 2px solid rgb(71, 66, 66);
+    cursor: pointer;
+  }
   /* Estilo para mostrar el botón cuando se desplace hacia abajo */
   .show-button {
     display: block;
   }
-
-button {
-    background: rgb(146, 126, 126);
-    color: white;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 5px 20px;
-    border-radius: 30px;
-    transition: .4s;
-    
-}
-
-button:hover {
-    background: solid;
-    border: 2px solid rgb(71, 66, 66);
-    cursor: pointer;
-}
 
   

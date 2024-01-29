@@ -9,9 +9,7 @@
     place-items: center;
     
     text-align: center;
-    background: #000000;  
-    background: -webkit-linear-gradient(to right, #434343, #000000);  
-    background: linear-gradient(to right, #434343, #000000);
+   
   }
 
   .container{
@@ -29,11 +27,7 @@
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
   }
 
-  h2 {
-    color: #fff;
-    text-align: center;
-    margin-bottom: 20px;
-  }
+
   
   .card:hover{
     height: 470px;

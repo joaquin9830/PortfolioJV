@@ -1,19 +1,17 @@
 .row {
-  background: #000000;
-  background: -webkit-linear-gradient(to right, #434343, #000000);
-  background: linear-gradient(to right, #434343, #000000);
-  padding: 20px;
+    padding: 20px;
 }
 
 .wrapper {
-  background: #f5eedd;
+  background: #f3f1ec;
   border-radius: 14px;
   padding: 25px;
   margin-left: 20px;
   margin-bottom: 15px;
   margin-top: 15px;
-  max-width: 380px;
-  width: 90%;
+  max-width: 300px;
+  width: 80%;
+  
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: 0.5s;
@@ -32,4 +30,11 @@ h2 {
   margin-bottom: 20px;
   font-family: 'Raleway', sans-serif;
 }
+
+.col-sm-2 {
+  display: flex;
+  justify-content: center;
+}
+
+
 
