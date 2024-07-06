@@ -1,9 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-*{
+* {
   font-family: 'Raleway', sans-serif;
 }
 
-section {
+body {
   background: #000000;
   background: -webkit-linear-gradient(to right, #434343, #000000);
   background: linear-gradient(to right, #434343, #000000);
@@ -33,7 +33,7 @@ button:hover {
 h2 {
   color: #fff;
   text-align: center;
-  
+
   font-family: 'Raleway', sans-serif;
 }
 
