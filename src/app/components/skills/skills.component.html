@@ -1,1 +1,14 @@
-<p>skills works!</p>
+<section id="skills">
+    <div class="container">
+        <h2 class="section-title">Habilidades</h2>
+        <div *ngFor="let section of skillsSections" class="skills-section" data-aos="zoom-in">
+            <h3 class="section-name">{{ section.name }}</h3>
+            <div class="skills-grid">
+                <div *ngFor="let skill of section.skills" class="skill-card">
+                    <img [src]="skill.image" alt="{{ skill.name }} logo" class="skill-image">
+                    <p class="skill-name">{{ skill.name }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
