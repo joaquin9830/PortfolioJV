@@ -1,5 +1,5 @@
 #banner {
-    background-image: url('ruta/a/tu/imagen-de-fondo.jpg'); /* Cambia esto a la ruta de tu imagen de fondo */
+    background-image: url('src/assets/images/banner/banner.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -8,18 +8,37 @@
     position: relative;
 }
 
+
 .banner-content {
     max-width: 600px;
     margin: 0 auto;
     background: rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 10px;
+    transition: background 0.3s;
+    position: relative;
 }
 
 .banner-title {
-    font-size: 3em;
-    margin-bottom: 20px;
+    font-size: 2.5em;
+    margin-bottom: 10px;
     font-weight: 700;
+}
+
+.banner-subtitle {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.highlight-full {
+    color: #c71414; 
+    font-weight: 800;
+}
+
+.highlight-stack {
+    color: #007bff; 
+    font-weight: 800;
 }
 
 .profile-pic {
@@ -29,22 +48,65 @@
     margin-bottom: 20px;
 }
 
-.banner-buttons .btn {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 1.2em;
+.banner-description {
+    font-size: 1em;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
-.banner-buttons .btn-primary {
-    background-color: #007bff;
-    border: none;
+
+
+.banner-content:hover .banner-description {
+    opacity: 1;
 }
 
-.banner-buttons .btn-secondary {
-    background-color: #6c757d;
-    border: none;
+/* Responsivo */
+@media (max-width: 768px) {
+    #banner {
+        padding: 50px 20px;
+    }
+
+    .banner-title {
+        font-size: 2.5em;
+    }
+
+    .banner-subtitle {
+        font-size: 1.5em;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    .banner-description {
+        font-size: 0.9em;
+    }
+
+
 }
 
-.banner-buttons .btn:hover {
-    opacity: 0.8;
+@media (max-width: 480px) {
+    #banner {
+        padding: 30px 20px;
+    }
+
+    .banner-title {
+        font-size: 2em;
+    }
+
+    .banner-subtitle {
+        font-size: 1.2em;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .banner-description {
+        font-size: 0.8em;
+    }
+
+
 }

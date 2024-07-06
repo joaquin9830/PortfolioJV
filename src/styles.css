@@ -39,7 +39,10 @@ h2 {
 }
 
 
-
+::selection {
+  background: #bcc0ca1c;
+  color: #fff;
+}
 
 
 @media (max-width: 575.98px) {
