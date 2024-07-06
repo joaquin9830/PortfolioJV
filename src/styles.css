@@ -4,9 +4,10 @@
 }
 
 body {
-  background: #000000;
-  background: -webkit-linear-gradient(to right, #434343, #000000);
-  background: linear-gradient(to right, #434343, #000000);
+  background: #2980b9;
+  background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);
+  background: linear-gradient(to right, #2c3e50, #2980b9);
+
   margin: 0;
   padding: 0;
   width: 100%;

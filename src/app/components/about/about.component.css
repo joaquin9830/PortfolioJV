@@ -1,0 +1,50 @@
+#banner {
+    background-image: url('ruta/a/tu/imagen-de-fondo.jpg'); /* Cambia esto a la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+.banner-content {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner-title {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.banner-buttons .btn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+}
+
+.banner-buttons .btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.banner-buttons .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+}
+
+.banner-buttons .btn:hover {
+    opacity: 0.8;
+}
