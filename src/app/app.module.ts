@@ -7,35 +7,32 @@ import {CargarScriptsService} from '../app/service/cargar-scripts.service';
 //Fin services
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ComponentesComponent } from './componentes/componentes.component';
-import { HeaderComponent } from './componentes/header/header.component';
-import { AboutComponent } from './componentes/about/about.component';
-import { ExperienceComponent } from './componentes/experience/experience.component';
-import { EducationComponent } from './componentes/education/education.component';
-import { SkillsComponent } from './componentes/skills/skills.component';
+
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import {HttpClientModule } from '@angular/common/http';
-import { HomeComponent } from './componentes/home/home.component';
-import { LoginComponent } from './componentes/login/login.component';
-import { FooterComponent } from './componentes/footer/footer.component';
-import { ProyectsComponent } from './componentes/proyects/proyects.component';
-import { ContactComponent } from './componentes/contact/contact.component';
-import { ButtonComponent } from './componentes/button/button.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { AboutComponent } from './components/about/about.component';
+import { EducationComponent } from './components/education/education.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { EducationDetailComponent } from './pages/education-detail/education-detail.component';
+import { HomeComponent } from './pages/home/home.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    ComponentesComponent,
     HeaderComponent,
+    FooterComponent,
     AboutComponent,
-    ExperienceComponent,
     EducationComponent,
     SkillsComponent,
+    ProjectsComponent,
+    EducationDetailComponent,
     HomeComponent,
-    LoginComponent,
-    FooterComponent,
-    ProyectsComponent,
-    ContactComponent,
-    ButtonComponent
+   
+    
   ],
   imports: [
     BrowserModule,
