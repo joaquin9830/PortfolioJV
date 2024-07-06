@@ -1,9 +1,9 @@
 .row {
-    padding: 20px;
+  padding: 20px;
 }
 
 .wrapper {
-  background: #f3f1ec;
+  background: #ffffff;
   border-radius: 14px;
   padding: 25px;
   margin-left: 20px;
@@ -11,7 +11,7 @@
   margin-top: 15px;
   max-width: 300px;
   width: 80%;
-  
+
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: 0.5s;
@@ -20,7 +20,7 @@
 
 }
 
-.wrapper:hover{
+.wrapper:hover {
   transform: scale(1.2)
 }
 
@@ -35,6 +35,3 @@ h2 {
   display: flex;
   justify-content: center;
 }
-
-
-

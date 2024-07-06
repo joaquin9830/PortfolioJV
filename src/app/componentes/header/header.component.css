@@ -10,7 +10,7 @@ nav{
 
 #Banner {
     position: relative;
-    height: 80vh;
+    height: 70vh;
     min-height: 450px;
     max-height: 1080px;
     background: url('../../../assets/Banner/Banner.jpg');
