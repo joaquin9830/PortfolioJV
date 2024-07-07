@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-education-crimi',
@@ -7,9 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./education-crimi.component.css']
 })
 export class EducationCrimiComponent {
-  constructor(private router: Router) {}
+  constructor() {}
 
-  goBack() {
-    this.router.navigate(['/']);
-  }
+
 }

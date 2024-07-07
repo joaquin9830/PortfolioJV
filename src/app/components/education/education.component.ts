@@ -12,7 +12,16 @@ export class EducationComponent {
   ngOnInit(){
     
   }
+  //Función para navegar a la página educación criminalistica
   education(){
     this.router.navigate(['/education-crimi']);
+  }
+  //Función para navegar a la página educación Argentina Programa
+  educationDetail(){
+    this.router.navigate(['/education-detail']);
+  }
+
+  educationAlura(){
+    this.router.navigate(['/education-alura']);
   }
 }
