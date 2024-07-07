@@ -11,25 +11,7 @@
     color:#fff;
   }
   
-  .back-button {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background: rgb(35, 113, 231);
-    color: white;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 5px 18px;
-    border-radius: 30px;
-    transition: .4s;
-  }
-  
-  .back-button:hover {
-    background: transparent;
-    border: 2px solid rgb(134, 144, 240);
-    cursor: pointer
-  }
+ 
 
   .education-content {    
     margin-top: 20px;   
