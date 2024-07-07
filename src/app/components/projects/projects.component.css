@@ -1,5 +1,3 @@
-/* projects.component.css */
-
 /* Sección proyectos */
 .projects-section {
   text-align: center;
@@ -20,12 +18,12 @@
 }
 
 .project-box {
-  background-color: #1a1818; /* Fondo para las cajas */
+  background-color: #1a1818; 
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  max-width: 350px; /* Aumentado el tamaño de las cajas */
-  flex: 1 1 350px; /* Aumentado el tamaño de las cajas */
+  max-width: 350px; 
+  flex: 1 1 350px; 
   margin: 10px;
   transition: transform 0.3s;
   position: relative;
@@ -44,7 +42,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(110, 110, 238, 0.7); /* Capa azul */
+  background: #075af5fa;
   transform: translateY(100%);
   transition: transform 0.3s;
   border-radius: 10px; /* Bordes redondeados */
@@ -61,17 +59,19 @@
   transform: translateY(0);
 }
 
-.project-info h2 {
+.project-info h3 {
   color: #faf7f7;
   margin-bottom: 10px;
-  font-size: 24px; /* Aumentado el tamaño del título */
+  font-size: 20px; 
+  font-weight: bold;
 }
 
 .project-info p {
   color: #fff8f8;
-  font-size: 16px;
+  font-size: 14px; 
   margin-bottom: 20px;
-  flex-grow: 1; /* Asegura que la descripción se ajuste al tamaño de la caja */
+  flex-grow: 1; 
+  font-weight: bold;
 }
 
 .icon-links {

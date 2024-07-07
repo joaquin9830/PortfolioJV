@@ -10,31 +10,28 @@ export class ProjectsComponent {
     {
       title: 'Aplicación web full stack',
       description: 'Aplicación web full stack desarrollada con Angular y Spring Boot',
-      image: 'assets/images/projects/project-1.png',
-      website: 'https://www.example1.com',
-      github: 'https://github.com/user/project1'
+      image: 'assets/images/projects/project-1.png',      
+      github: 'https://github.com/joaquin9830/BackEndProyectofinal'
     },
     {
-      title: 'Proyecto 2',
-      description: 'Descripción del Proyecto 2',
-      image: 'assets/images/projects/project-2.png',
-      website: 'https://www.example1.com',
-      github: 'https://github.com/user/project1'
+      title: 'Trooper Stay Java',
+      description: 'Aplicación Desktop desarrollada con Java | JuniorTechTRoopers',
+      image: 'assets/images/projects/project-2.png',      
+      github: 'https://github.com/CodeStrong2023/ProyectoJuniorTechTroopers'
     },
     {
-      title: 'Proyecto 3',
-      description: 'Descripción del Proyecto 3',
+      title: 'Sitio Web JuniorTechTroopers',
+      description: 'Aplicación web de Junior Tech Troopers desarrollada con Angular y Firebase',
       image: 'assets/images/projects/project-3.png',
-      website: 'https://www.example1.com',
-      github: 'https://github.com/user/project1'
+      website: 'https://juniortechtroopers.com.ar/',
+      github: 'https://github.com/juniors-tech-troopers'
     },
     {
-      title: 'Proyecto 4',
-      description: 'Descripción del Proyecto 4',
-      image: 'assets/images/projects/project-4.png',
-      website: 'https://www.example1.com',
-      github: 'https://github.com/user/project1'
+      title: 'Trooper Stay Python',
+      description: 'Aplicación Desktop desarrollada con Python | JuniorTechTRoopers',
+      image: 'assets/images/projects/project-4.png',      
+      github: 'https://github.com/CodeStrong2023/ProyectoPythonJuniorTechTroopers'
     },
-    // Agrega más proyectos aquí
+   
   ];
 }
