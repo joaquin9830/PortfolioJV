@@ -1,82 +1,101 @@
 .desarrollador-frontend-section {
-    padding: 20px;
-    background-color: #00000073;
-    border-radius: 10px;
-    max-width: 800px;
-    margin: 0 auto;
-    margin-top: 20px;
-    position: relative;
-    color: #fff;
-  }
-  
+  padding: 20px;
+  background-color: #00000073;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 20px;
+  position: relative;
+  color: #fff;
+}
 
-  
-  .desarrollador-frontend-content {
-    margin-top: 20px;
-  }
-  
-  .desarrollador-frontend-content h1 {
-    color: rgb(43, 142, 223);
-    font-size: 28px;
-    margin-bottom: 10px;
-    text-align: center;
-    font-weight: bolder;
-  }
-  
-  .desarrollador-frontend-content h2 {
-    color: #5c91b4;
-    font-size: 20px;
-    margin-bottom: 20px;
-    font-weight: bolder;
-  }
-  
-  .desarrollador-frontend-content p {
-    color: #f1eded;
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 30px;
-  }
-  
+.desarrollador-frontend-content {
+  margin-top: 30px;
+}
+
+.desarrollador-frontend-content h1 {
+  color: rgb(43, 142, 223);
+  font-size: 28px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.desarrollador-frontend-content h2 {
+  color: #5c91b4;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+.desarrollador-frontend-content p {
+  color: #f1eded;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.skills-section {
+  display: flex;
+  flex-direction: column; /* Por defecto, en columna para pantallas pequeñas */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.skills-column {
+  flex: 1;
+  margin: 10px 0; /* Margin ajustado para elementos en columna */
+}
+
+.skills-section h3 {
+  color: #f1eeee;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%; /* Asegura que h3 ocupe el 100% del ancho */
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  width: 100%; /* Asegura que la lista ocupe el 100% del ancho */
+}
+
+.skills-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.skills-list li img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.skills-list li span {
+  flex-grow: 1;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
   .skills-section {
-    display: flex;
+    flex-direction: row; /* Cambia a fila para pantallas más grandes */
     justify-content: space-around;
-    text-align: center;
+    align-items: flex-start; /* Alinea elementos en la parte superior */
   }
-  
+
   .skills-column {
-    flex: 1;
     margin: 0 10px;
+    text-align: center;
   }
-  
+
   .skills-section h3 {
-    color: #f1eeee;
-    font-size: 24px;
-    margin-bottom: 20px;
     text-align: center;
-  }
-  
-  .skills-list {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-  }
-  
-  .skills-list li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 10px;
-    color: #fff;
   }
-  
-  .skills-list li img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-  }
-  
-  .skills-list li span {
-    flex-grow: 1;
-    text-align: left;
-  }
-  
+}
