@@ -45,6 +45,7 @@ export class SkillsComponent {
         { name: 'Github', image: 'assets/icons/skills/github.png' },
         { name: 'Postman', image: 'assets/icons/skills/postman.png' },
         { name: 'Figma', image: 'assets/icons/skills/figma.png' },
+        { name: 'Bootstrap', image: 'assets/icons/skills/bootstrap.png' },
         
       ]
     }
