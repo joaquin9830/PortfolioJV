@@ -1,0 +1,95 @@
+/* education-crimi.component.css */
+
+.education-crimi-section {
+    padding: 20px;
+    background-color: #00000073;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    color:#fff;
+  }
+  
+  .back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgb(35, 113, 231);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 5px 18px;
+    border-radius: 30px;
+    transition: .4s;
+  }
+  
+  .back-button:hover {
+    background: transparent;
+    border: 2px solid rgb(134, 144, 240);
+    cursor: pointer
+  }
+
+  .education-content {    
+    margin-top: 20px;   
+  }
+  
+  .education-content h1 {
+    color:rgb(43, 142, 223);
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bolder;
+    
+  }
+  
+  .education-content h2 {
+    color: #5c91b4;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+  }
+  
+  .education-content p {
+    color: #f1eded;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  .skills-section h3 {   
+    color: #f1eeee;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+ 
+  
+  .skills-container {    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .skill-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+  
+  .skill-box img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .skill-box p {
+    color: #333;
+    font-size: 14px;
+    padding: 10px;
+  }
+  

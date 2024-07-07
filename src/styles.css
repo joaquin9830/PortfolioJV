@@ -1,44 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
-*{
+* {
   font-family: 'Raleway', sans-serif;
 }
 
-section {
-  background: #000000;
-  background: -webkit-linear-gradient(to right, #434343, #000000);
-  background: linear-gradient(to right, #434343, #000000);
+body {
+  background: #244e9b;
+  background: -webkit-linear-gradient(to right, #2c517c, #141E30);
+  background: linear-gradient(to right, #243B55, #141E30);
   margin: 0;
   padding: 0;
   width: 100%;
   margin-top: 0;
 }
 
-button {
-  background: rgb(146, 126, 126);
-  color: white;
-  text-decoration: none;
-  border: 2px solid transparent;
-  font-weight: bold;
-  padding: 10px 25px;
-  border-radius: 30px;
-  transition: .4s;
-}
-
-button:hover {
-  background: transparent;
-  border: 2px solid rgb(71, 66, 66);
-  cursor: pointer;
-}
 
 h2 {
   color: #fff;
   text-align: center;
-  
   font-family: 'Raleway', sans-serif;
 }
 
 
-
+::selection {
+  background: #bcc0ca1c;
+  color: #fff;
+}
 
 
 @media (max-width: 575.98px) {

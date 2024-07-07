@@ -1,0 +1,101 @@
+/* desarrollador-web.component.css */
+
+.desarrollador-web-section {
+  padding: 20px;
+  background-color: #00000073;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 20px;
+  position: relative;
+  color: #fff;
+}
+
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgb(35, 113, 231);
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 5px 18px;
+  border-radius: 30px;
+  transition: .4s;
+}
+
+.back-button:hover {
+  background: transparent;
+  border: 2px solid rgb(134, 144, 240);
+  cursor: pointer;
+}
+
+.desarrollador-web-content {
+  margin-top: 20px;
+}
+
+.desarrollador-web-content h1 {
+  color: rgb(43, 142, 223);
+  font-size: 28px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.desarrollador-web-content h2 {
+  color: #5c91b4;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+.desarrollador-web-content p {
+  color: #f1eded;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.skills-section {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.skills-column {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.skills-section h3 {
+  color: #f1eeee;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.skills-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.skills-list li img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.skills-list li span {
+  flex-grow: 1;
+  text-align: left;
+}
