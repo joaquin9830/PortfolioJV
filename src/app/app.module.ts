@@ -19,6 +19,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { EducationDetailComponent } from './pages/education-detail/education-detail.component';
 import { HomeComponent } from './pages/home/home.component';
 import { EducationCrimiComponent } from './pages/education-crimi/education-crimi.component';
+import { EducationAluraComponent } from './pages/education-alura/education-alura.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { EducationCrimiComponent } from './pages/education-crimi/education-crimi
     EducationDetailComponent,
     HomeComponent,
     EducationCrimiComponent,
+    EducationAluraComponent,
    
     
   ],
