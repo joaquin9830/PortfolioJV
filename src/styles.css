@@ -5,41 +5,18 @@
 
 body {
   background: #244e9b;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2c517c, #141E30);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #243B55, #141E30);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
-
-
+  background: -webkit-linear-gradient(to right, #2c517c, #141E30);
+  background: linear-gradient(to right, #243B55, #141E30);
   margin: 0;
   padding: 0;
   width: 100%;
   margin-top: 0;
 }
 
-button {
-  background: rgb(146, 126, 126);
-  color: white;
-  text-decoration: none;
-  border: 2px solid transparent;
-  font-weight: bold;
-  padding: 10px 25px;
-  border-radius: 30px;
-  transition: .4s;
-}
-
-button:hover {
-  background: transparent;
-  border: 2px solid rgb(71, 66, 66);
-  cursor: pointer;
-}
 
 h2 {
   color: #fff;
   text-align: center;
-
   font-family: 'Raleway', sans-serif;
 }
 
