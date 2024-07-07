@@ -5,9 +5,11 @@
 }
 
 .projects-section h1 {
-  color: #ffffff;
-  margin-bottom: 40px;
-  font-size: 28px;
+  color:rgb(43, 142, 223);
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-weight: 700;
 }
 
 .projects-container {

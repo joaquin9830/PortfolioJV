@@ -1,7 +1,7 @@
 <!-- projects.component.html -->
 <div class="projects-section">
   <h1>Proyectos</h1>
-  <div class="projects-container">
+  <div class="projects-container" data-aos="zoom-in">
     <div class="project-box" *ngFor="let project of projects; let i = index" [class.hidden]="i >= 9">
       <img [src]="project.image" alt="{{ project.title }}">
       <div class="project-info">
