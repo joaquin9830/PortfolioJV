@@ -1,1 +1,21 @@
-<p>projects works!</p>
+<!-- projects.component.html -->
+<div class="projects-section">
+  <h1>Proyectos</h1>
+  <div class="projects-container">
+    <div class="project-box" *ngFor="let project of projects; let i = index" [class.hidden]="i >= 9">
+      <img [src]="project.image" alt="{{ project.title }}">
+      <div class="project-info">
+        <h2>{{ project.title }}</h2>
+        <p>{{ project.description }}</p>
+        <div class="icon-links">
+          <a href="{{ project.website }}" target="_blank">
+            <i class="bi bi-globe"></i>
+          </a>
+          <a href="{{ project.github }}" target="_blank">
+            <i class="bi bi-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
