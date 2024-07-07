@@ -20,8 +20,12 @@ export class EducationComponent {
   educationDetail(){
     this.router.navigate(['/education-detail']);
   }
-
+  //Función para navegar a la página educación Alura
   educationAlura(){
     this.router.navigate(['/education-alura']);
+  }
+  //Función para navegar a la página educación UTN
+  educationUtn(){
+    this.router.navigate(['/education-utn']);
   }
 }
