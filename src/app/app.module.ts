@@ -21,6 +21,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { EducationCrimiComponent } from './pages/education-crimi/education-crimi.component';
 import { EducationAluraComponent } from './pages/education-alura/education-alura.component';
 import { EducationUtnComponent } from './pages/education-utn/education-utn.component';
+import { ButtonScrollComponent } from './components/button-scroll/button-scroll.component';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { EducationUtnComponent } from './pages/education-utn/education-utn.compo
     EducationCrimiComponent,
     EducationAluraComponent,
     EducationUtnComponent,
+    ButtonScrollComponent,
    
     
   ],
