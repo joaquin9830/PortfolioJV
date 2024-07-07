@@ -15,7 +15,7 @@ export class ProjectsComponent {
     },
     {
       title: 'Trooper Stay Java',
-      description: 'Aplicación Desktop desarrollada con Java | JuniorTechTRoopers',
+      description: 'Aplicación Desktop desarrollada con Java | JuniorTechTroopers',
       image: 'assets/images/projects/project-2.png',      
       github: 'https://github.com/CodeStrong2023/ProyectoJuniorTechTroopers'
     },
@@ -28,7 +28,7 @@ export class ProjectsComponent {
     },
     {
       title: 'Trooper Stay Python',
-      description: 'Aplicación Desktop desarrollada con Python | JuniorTechTRoopers',
+      description: 'Aplicación Desktop desarrollada con Python | JuniorTechTroopers',
       image: 'assets/images/projects/project-4.png',      
       github: 'https://github.com/CodeStrong2023/ProyectoPythonJuniorTechTroopers'
     },
