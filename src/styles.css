@@ -46,7 +46,23 @@ h2 {
   color: #fff;
 }
 
+/* Estilo para scrollbar en WebKit */
+::-webkit-scrollbar {
+  width: 10px; /* Ancho de la scrollbar */
+}
 
+::-webkit-scrollbar-track {
+  background-color: #1b1a1a; /* Color del fondo de la scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2157eb; /* Color del thumb (la parte que puedes arrastrar) */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #388bd8; /* Color del thumb al pasar el mouse */
+}
 
 @media (max-width: 575.98px) {
   h1 {
