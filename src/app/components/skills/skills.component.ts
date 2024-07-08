@@ -51,6 +51,13 @@ export class SkillsComponent {
       ]
     },
     {
+      name: 'PaaS',
+      skills: [
+        { name: 'Firebase', image: 'assets/icons/skills/firebase.png' },
+        { name: 'Heroku', image: 'assets/icons/skills/heroku.png' },               
+      ]
+    },
+    {
       name: 'Habilidades blandas', 
       skills: [
         { name: 'Productividad', image: 'assets/icons/skills/productividad.png' },
