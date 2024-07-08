@@ -46,6 +46,18 @@ export class SkillsComponent {
         { name: 'Postman', image: 'assets/icons/skills/postman.png' },
         { name: 'Figma', image: 'assets/icons/skills/figma.png' },
         { name: 'Bootstrap', image: 'assets/icons/skills/bootstrap.png' },
+        { name: 'Notion', image: 'assets/icons/skills/notion.png' },
+        
+      ]
+    },
+    {
+      name: 'Habilidades blandas', 
+      skills: [
+        { name: 'Productividad', image: 'assets/icons/skills/productividad.png' },
+        { name: 'Eficiencia', image: 'assets/icons/skills/foco.png' },
+        { name: 'Scrum', image: 'assets/icons/skills/scrum.png' },
+        { name: 'Comunicación', image: 'assets/icons/skills/comunicacion.png' },
+        { name: 'Trabajo en equipo', image: 'assets/icons/skills/trabajo-equipo.png' },
         
       ]
     }
