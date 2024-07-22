@@ -56,24 +56,34 @@
 
 .tag {
     display: inline-block;
-    background: #007bff;
-    color: white;
+    background: #fffdfd41;
+    color: rgb(245, 92, 92);
     padding: 5px 10px;
     margin: 5px;
     border-radius: 5px;
     font-size: 0.9em;
+    font-weight: 600;
 }
 
-.btn-meetme {
+.banner-button {
     display: inline-block;
-    background: #c71414;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px 15px;
     font-size: 1em;
+    background: rgb(35, 113, 231);
+    border: none;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    font-weight: bold;
+    transition: .4s;
+}
+
+.banner-button:hover {
+    background: transparent;
+    border: 2px solid rgb(134, 144, 240);
     cursor: pointer;
-    margin-top: 20px;
 }
 
 .banner-content:hover .tags-container {
@@ -112,7 +122,7 @@
         font-size: 0.8em;
     }
 
-    .btn-meetme {
+    .timeline-button {
         font-size: 0.9em;
         padding: 8px 16px;
     }
@@ -140,7 +150,7 @@
         font-size: 0.7em;
     }
 
-    .btn-meetme {
+    .timeline-button {
         font-size: 0.8em;
         padding: 6px 12px;
     }
