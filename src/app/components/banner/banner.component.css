@@ -8,7 +8,6 @@
     position: relative;
 }
 
-
 .banner-content {
     max-width: 600px;
     margin: 0 auto;
@@ -50,15 +49,34 @@
     margin-bottom: 20px;
 }
 
-.banner-description {
-    font-size: 1em;
+.tags-container {
     opacity: 0;
     transition: opacity 0.3s;
 }
 
+.tag {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
 
+.btn-meetme {
+    display: inline-block;
+    background: #c71414;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+}
 
-.banner-content:hover .banner-description {
+.banner-content:hover .tags-container {
     opacity: 1;
 }
 
@@ -69,7 +87,7 @@
     to {
       opacity: 1;
     }
-  }
+}
 
 /* Responsivo */
 @media (max-width: 768px) {
@@ -90,11 +108,14 @@
         height: 120px;
     }
 
-    .banner-description {
-        font-size: 0.9em;
+    .tag {
+        font-size: 0.8em;
     }
 
-
+    .btn-meetme {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -115,9 +136,12 @@
         height: 100px;
     }
 
-    .banner-description {
-        font-size: 0.8em;
+    .tag {
+        font-size: 0.7em;
     }
 
-
+    .btn-meetme {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
 }
