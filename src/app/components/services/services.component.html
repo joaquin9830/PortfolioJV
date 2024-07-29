@@ -1,1 +1,11 @@
-<p>services works!</p>
+<section class="services">
+    <div class="service-card" *ngFor="let service of services">
+      <img [src]="service.icon" alt="{{service.title}} icon" class="service-icon">
+      <h3 class="service-title">{{service.title}}</h3>
+      <p class="service-description">{{service.description}}</p>
+    </div>
+</section>
+
+
+
+
