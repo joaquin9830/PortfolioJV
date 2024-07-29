@@ -23,6 +23,7 @@ import { EducationAluraComponent } from './pages/education-alura/education-alura
 import { EducationUtnComponent } from './pages/education-utn/education-utn.component';
 import { ButtonScrollComponent } from './components/button-scroll/button-scroll.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { ServicesComponent } from './components/services/services.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { BannerComponent } from './components/banner/banner.component';
     EducationUtnComponent,
     ButtonScrollComponent,
     BannerComponent,
+    ServicesComponent,
    
     
   ],
