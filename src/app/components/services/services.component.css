@@ -1,6 +1,6 @@
 .services-section {
   text-align: center;
-  margin: 40px 0;
+  margin: 40px 0;  
 }
 
 .section-title {
@@ -44,10 +44,34 @@
 .service-title {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #fefeff;
+  color:rgb(0, 211, 248);
+  font-weight: 600;
 }
 
 .service-description {
   font-size: 1rem;
   color: #cec6c6;
+  font-weight: 660;
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .service-card {
+    width: 100%;
+    max-width: 300px; /* Limita el ancho máximo */
+    margin: 0 auto; /* Centra las cartas en pantallas pequeñas */
+    padding: 10px;
+  }
+
+  .service-title {
+    font-size: 1rem;
+  }
+
+  .service-description {
+    font-size: 0.8rem;
+  }
 }

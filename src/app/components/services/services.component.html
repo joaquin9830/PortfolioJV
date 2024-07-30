@@ -1,7 +1,7 @@
 <section class="services-section" id="services">
   <h2 class="section-title">Servicios</h2>
   <div class="services">
-    <div class="service-card" *ngFor="let service of services">
+    <div class="service-card" *ngFor="let service of services" data-aos="flip-left">
       <img [src]="service.icon" alt="{{service.title}} icon" class="service-icon">
       <h3 class="service-title">{{service.title}}</h3>
       <p class="service-description">{{service.description}}</p>
