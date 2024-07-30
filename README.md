@@ -1,27 +1,18 @@
-# ArgPro
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Portfolio Personal
+<h2>Descripción</h2>
+<p>Este es mi portfolio personal, desarrollado para mostrar mis habilidades y experiencia en desarrollo de software. El sitio está construido utilizando Angular y presenta una interfaz moderna y responsiva. Incluye secciones como "Sobre mí", "Servicios", "Proyectos", y más. Utilizo TypeScript, HTML, CSS, y Bootstrap para el diseño y la funcionalidad. El sitio está desplegado en Firebase, garantizando una experiencia rápida y segura para los visitantes.</p>
+Tecnologías Utilizadas
+<ul>
+  <li><strong>Angular:</strong> Framework front-end utilizado para crear una Single Page Application (SPA) con una estructura modular.</li>
+  <li><strong>TypeScript:</strong> Lenguaje de programación utilizado para mejorar la robustez del código y la mantenibilidad.</li>
+  <li><strong>HTML & CSS:</strong> Tecnologías básicas para la estructura y el estilo de la página.</li>
+  <li><strong>Bootstrap:</strong> Framework de CSS utilizado para el diseño responsivo y componentes estilizados.</li> 
+  <li><strong>Firebase:</strong> Plataforma utilizada para el alojamiento del sitio, proporcionando un despliegue rápido y seguro.</li>
+</ul>
+Características
+<ul>
+  <li><strong>Diseño Responsivo:</strong> Adaptable a diferentes tamaños de pantalla, desde dispositivos móviles hasta desktop.</li>
+  <li><strong>Animaciones:</strong> Efectos de entrada y desplazamiento para una experiencia de usuario atractiva.</li>
+  <li><strong>Secciones:</strong> Incluye secciones como "Sobre mí", "Servicios", "Proyectos", y "Contacto".</li>
+  <li><strong>Despliegue en Firebase:</strong> Sitio web alojado y desplegado en Firebase.</li>
+</ul>
