@@ -1,123 +1,88 @@
-#banner {
-    background-image: url('src/assets/images/banner/banner.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
+#about-me {    
+    padding: 50px 20px;
     text-align: center;
-    padding: 100px 0;
-    position: relative;
 }
 
-
-.banner-content {
-    max-width: 600px;
+.about-me-content {
+    max-width: 800px;
     margin: 0 auto;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.281);
     padding: 20px;
     border-radius: 10px;
-    transition: background 0.3s;
-    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.banner-title {
+.about-me-title {
+    color:rgb(43, 142, 223);
+    text-align: center;
     font-size: 2.5em;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-weight: 700;
-    animation: fadeIn 2s ease-in-out;
 }
 
-.banner-subtitle {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    font-weight: 500;
-    animation: fadeIn 2s ease-in-out;
-}
-
-.highlight-full {
-    color: #c71414; 
-    font-weight: 800;
-}
-
-.highlight-stack {
-    color: #007bff; 
-    font-weight: 800;
-}
-
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-.banner-description {
+.about-me-description {
     font-size: 1em;
-    opacity: 0;
-    transition: opacity 0.3s;
+    margin-bottom: 20px;
+    color: #fffafa;
+    text-align: left;
 }
 
-
-
-.banner-content:hover .banner-description {
-    opacity: 1;
+.download-cv-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    background: rgb(35, 113, 231);
+    border: none;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    font-weight: bold;
+    transition: .4s;
 }
 
-@keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
+.download-cv-button:hover {
+    background: transparent;
+    border: 2px solid rgb(134, 144, 240);
+    color: rgb(244, 245, 247);
+    cursor: pointer;
+}
 
 /* Responsivo */
 @media (max-width: 768px) {
-    #banner {
-        padding: 50px 20px;
-    }
-
-    .banner-title {
-        font-size: 2.5em;
-    }
-
-    .banner-subtitle {
-        font-size: 1.5em;
-    }
-
-    .profile-pic {
-        width: 120px;
-        height: 120px;
-    }
-
-    .banner-description {
-        font-size: 0.9em;
-    }
-
-
-}
-
-@media (max-width: 480px) {
-    #banner {
+    #about-me {
         padding: 30px 20px;
     }
 
-    .banner-title {
-        font-size: 2em;
+    .about-me-title {
+        font-size: 1.8em;
     }
 
-    .banner-subtitle {
-        font-size: 1.2em;
+    .about-me-description {
+        font-size: 0.9em;
     }
 
-    .profile-pic {
-        width: 100px;
-        height: 100px;
+    .download-cv-button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    #about-me {
+        padding: 20px 10px;
     }
 
-    .banner-description {
+    .about-me-title {
+        font-size: 1.5em;
+    }
+
+    .about-me-description {
         font-size: 0.8em;
     }
 
-
+    .download-cv-button {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
 }

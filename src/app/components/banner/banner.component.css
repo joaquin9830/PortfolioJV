@@ -1,0 +1,157 @@
+#banner {
+    background-image: url('src/assets/images/banner/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+.banner-content {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    transition: background 0.3s;
+    position: relative;
+}
+
+.banner-title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.banner-subtitle {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: 500;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.highlight-full {
+    color: #c71414; 
+    font-weight: 800;
+}
+
+.highlight-stack {
+    color: #007bff; 
+    font-weight: 800;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.tags-container {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tag {
+    display: inline-block;
+    background: #8182f541;
+    color: rgb(243, 47, 47);
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.banner-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 15px;
+    font-size: 1em;
+    background: rgb(35, 113, 231);
+    border: none;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    font-weight: bold;
+    transition: .4s;
+}
+
+.banner-button:hover {
+    background: transparent;
+    border: 2px solid rgb(134, 144, 240);
+    cursor: pointer;
+}
+
+.banner-content:hover .tags-container {
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    #banner {
+        padding: 50px 20px;
+    }
+
+    .banner-title {
+        font-size: 2.5em;
+    }
+
+    .banner-subtitle {
+        font-size: 1.5em;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    .tag {
+        font-size: 0.8em;
+    }
+
+    .timeline-button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    #banner {
+        padding: 30px 20px;
+    }
+
+    .banner-title {
+        font-size: 2em;
+    }
+
+    .banner-subtitle {
+        font-size: 1.2em;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .tag {
+        font-size: 0.7em;
+    }
+
+    .timeline-button {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
+}
