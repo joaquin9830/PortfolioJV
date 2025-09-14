@@ -1,11 +1,10 @@
-<!-- Sección Habilidades Espectacular -->
 <section id="skills" class="skills-section">
   <!-- Partículas de fondo -->
   <div class="particles-container">
     <div class="particle" *ngFor="let particle of particles"></div>
   </div>
-  
-  <!-- Gradientes animados -->
+
+  <!-- Fondo con gradientes -->
   <div class="section-background">
     <div class="gradient-orb orb-1"></div>
     <div class="gradient-orb orb-2"></div>
@@ -13,7 +12,7 @@
   </div>
 
   <div class="skills-container">
-    <!-- Título con animación -->
+    <!-- Header -->
     <div class="section-header">
       <h2 class="section-title">
         <span class="title-text">Mis</span>
@@ -25,7 +24,7 @@
       </p>
     </div>
 
-    <!-- Estadísticas de habilidades -->
+    <!-- Stats -->
     <div class="skills-stats">
       <div class="stat-card" *ngFor="let stat of skillsStats">
         <div class="stat-icon">
@@ -38,10 +37,9 @@
       </div>
     </div>
 
-    <!-- Categorías de habilidades -->
+    <!-- Categorías -->
     <div class="skills-categories">
-      <div class="category-card" *ngFor="let section of skillsSections; let i = index" 
-           [class.animate]="isVisible">
+      <div class="category-card" *ngFor="let section of skillsSections" [class.animate]="isVisible">
         <div class="category-header">
           <div class="category-icon">
             <i [class]="section.icon"></i>
@@ -49,15 +47,15 @@
           <h3 class="category-name">{{ section.name }}</h3>
           <div class="category-count">{{ section.skills.length }}</div>
         </div>
-        
+
         <div class="skills-grid">
-          <div class="skill-card" *ngFor="let skill of section.skills; let j = index">
+          <div class="skill-card" *ngFor="let skill of section.skills">
             <div class="skill-content">
               <div class="skill-icon-container">
-                <app-simple-icon [iconName]="skill.icon" [size]="32" [color]="'var(--primary-400)'" class="skill-icon"></app-simple-icon>
+                <i [class]="skill.icon"></i>
                 <div class="skill-glow"></div>
               </div>
-              
+
               <div class="skill-info">
                 <h4 class="skill-name">{{ skill.name }}</h4>
                 <div class="skill-experience">
@@ -66,22 +64,21 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="skill-hover-effect"></div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Call to action -->
+    <!-- CTA -->
     <div class="skills-cta">
       <div class="cta-content">
         <h3>¿Interesado en mis habilidades técnicas?</h3>
         <p>Descarga mi CV para ver todos mis certificados y experiencia detallada</p>
         <div class="cta-buttons">
-          <a href="../../../assets/document/Programador CV Joaquín Viñolo.pdf.pdf" 
-             class="btn btn-primary btn-lg" 
-             download>
+          <a href="../../../assets/document/Programador CV Joaquín Viñolo.pdf.pdf"
+             class="btn btn-primary btn-lg" download>
             <i class="bi bi-download"></i>
             <span>Descargar CV</span>
           </a>

@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class DevIconsService {
 
-  // Mapeo de nombres de tecnologías a clases de DevIcons
+  // Mapeo simplificado con solo iconos que sabemos que existen
   private iconMap: { [key: string]: string } = {
     // Frontend Technologies
     'angular': 'devicon-angular-plain',
@@ -13,85 +13,82 @@ export class DevIconsService {
     'rxjs': 'devicon-rxjs-original',
     'bootstrap': 'devicon-bootstrap-plain',
     'css3': 'devicon-css3-plain',
-    'form-input': 'devicon-html5-plain',
+    'html5': 'devicon-html5-plain',
+    'javascript': 'devicon-javascript-plain',
+    'react': 'devicon-react-original',
+    'vue': 'devicon-vuejs-plain',
     
     // Backend & AWS
     'python': 'devicon-python-plain',
     'amazonaws': 'devicon-amazonwebservices-original',
-    'adobeacrobatreader': 'devicon-python-plain',
-    'layers': 'devicon-docker-plain',
+    'nodejs': 'devicon-nodejs-plain',
+    'express': 'devicon-express-original',
+    'docker': 'devicon-docker-plain',
     
-    // Architecture
-    'hexagon': 'devicon-docker-plain',
-    'microservice': 'devicon-docker-plain',
-    'command': 'devicon-git-plain',
-    'package': 'devicon-npm-original-wordmark',
-    'git-branch': 'devicon-git-plain',
+    // Databases
+    'mysql': 'devicon-mysql-plain',
+    'mongodb': 'devicon-mongodb-plain',
+    'postgresql': 'devicon-postgresql-plain',
+    'redis': 'devicon-redis-plain',
     
-    // Integrations
-    'api': 'devicon-nodejs-plain',
-    'oauth': 'devicon-google-plain',
-    'building': 'devicon-mysql-plain',
-    'check-circle': 'devicon-git-plain',
-    'send': 'devicon-git-plain',
+    // DevOps & Tools
+    'git': 'devicon-git-plain',
+    'github': 'devicon-github-original',
+    'gitlab': 'devicon-gitlab-plain',
+    'nginx': 'devicon-nginx-original',
+    'ubuntu': 'devicon-ubuntu-plain',
+    'linux': 'devicon-linux-plain',
+    'kubernetes': 'devicon-kubernetes-plain',
+    'jenkins': 'devicon-jenkins-plain',
     
-    // DevOps & CI/CD
-    'git-merge': 'devicon-git-plain',
-    'settings-2': 'devicon-ubuntu-plain',
-    'file-text': 'devicon-markdown-original',
-    'server': 'devicon-nginx-original',
-    'rocket': 'devicon-docker-plain',
+    // IDEs & Tools
+    'vscode': 'devicon-vscode-plain',
+    'intellij': 'devicon-intellij-plain',
+    'figma': 'devicon-figma-plain',
+    'firebase': 'devicon-firebase-plain',
+    'heroku': 'devicon-heroku-plain',
+    'azure': 'devicon-azure-plain',
+    'google': 'devicon-google-plain',
+    'slack': 'devicon-slack-plain',
+    'discord': 'devicon-discord-plain',
+    'trello': 'devicon-trello-plain',
+    'powerpoint': 'devicon-powerpoint-plain',
+    'gitbook': 'devicon-gitbook-original',
+    'markdown': 'devicon-markdown-original',
+    'npm': 'devicon-npm-original-wordmark',
     
-    // Professional Skills
-    'message-circle': 'devicon-slack-plain',
-    'users': 'devicon-github-original',
-    'presentation': 'devicon-powerpoint-plain',
-    'book-open': 'devicon-gitbook-original',
-    'clock': 'devicon-linux-plain',
+    // Specific mappings for current skills
+    'reactive-forms': 'devicon-angular-plain',
+    'css-responsive': 'devicon-css3-plain',
+    'pypdf-library': 'devicon-python-plain',
+    'hexagonal-pattern': 'devicon-docker-plain',
+    'microservices-architecture': 'devicon-docker-plain',
+    'cqrs-pattern': 'devicon-git-plain',
+    'data-transfer-objects': 'devicon-npm-original-wordmark',
+    'domain-driven-design': 'devicon-git-plain',
+    'beaware360-integration': 'devicon-nodejs-plain',
+    'oauth2-authentication': 'devicon-google-plain',
+    'distributor-management': 'devicon-mysql-plain',
+    'validation-component': 'devicon-git-plain',
+    'http-requests': 'devicon-nodejs-plain',
+    'continuous-integration': 'devicon-git-plain',
+    'configuration-management': 'devicon-ubuntu-plain',
+    'automated-deployment': 'devicon-docker-plain',
+    'stakeholder-presentations': 'devicon-powerpoint-plain',
     
-    // Section Icons
-    'layout': 'devicon-html5-plain',
-    'plug': 'devicon-arduino-plain',
-    'settings': 'devicon-ubuntu-plain',
-    
-    // Stats Icons
-    'code': 'devicon-vscode-plain',
-    'calendar-check': 'devicon-linux-plain',
-    'grid-3x3': 'devicon-trello-plain',
-    'cloud': 'devicon-amazonwebservices-original',
-    
-    // Additional specific icons for better mapping
+    // AWS specific
     'aws-lambda': 'devicon-amazonwebservices-original',
-    'pypdf': 'devicon-python-plain',
     'api-gateway': 'devicon-amazonwebservices-original',
     's3': 'devicon-amazonwebservices-original',
-    'custom-layers': 'devicon-docker-plain',
-    'hexagonal-architecture': 'devicon-docker-plain',
-    'microservices': 'devicon-docker-plain',
-    'cqrs': 'devicon-git-plain',
-    'dtos': 'devicon-npm-original-wordmark',
-    'domain-separation': 'devicon-git-plain',
-    'beaware360': 'devicon-nodejs-plain',
-    'wso2': 'devicon-google-plain',
-    'maestro-distribuidores': 'devicon-mysql-plain',
-    'validator-component': 'devicon-git-plain',
-    'requests': 'devicon-git-plain',
-    'cicd-pipelines': 'devicon-git-plain',
-    'config-parser': 'devicon-ubuntu-plain',
-    'structured-logging': 'devicon-markdown-original',
-    'environment-management': 'devicon-nginx-original',
-    'automated-deployments': 'devicon-docker-plain',
-    'client-communication': 'devicon-slack-plain',
-    'workshop-facilitation': 'devicon-github-original',
-    'stakeholder-demos': 'devicon-powerpoint-plain',
-    'technical-documentation': 'devicon-gitbook-original',
-    'effort-estimation': 'devicon-linux-plain'
+    'custom-layers': 'devicon-docker-plain'
   };
 
   constructor() { }
 
   getIconClass(iconName: string): string {
-    return this.iconMap[iconName] || 'devicon-git-plain';
+    const iconClass = this.iconMap[iconName] || 'devicon-git-plain';
+    console.log(`Icon name: ${iconName}, Icon class: ${iconClass}`);
+    return iconClass;
   }
 
   getIconSvg(iconName: string, size: number = 24): string {

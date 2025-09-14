@@ -48,68 +48,68 @@ export class SkillsComponent implements OnInit {
       name: 'Frontend',
       icon: 'bi-layout-text-window',
       skills: [
-        { name: 'Angular 18+', icon: 'angular', level: 0 },
-        { name: 'TypeScript', icon: 'typescript', level: 0 },
-        { name: 'RxJS', icon: 'rxjs', level: 0 },
-        { name: 'Reactive Forms', icon: 'form-input', level: 0 },
-        { name: 'Bootstrap', icon: 'bootstrap', level: 0 },
-        { name: 'CSS Responsive', icon: 'css3', level: 0 }
+        { name: 'Angular 18+', icon: 'devicon-angularjs-plain colored', level: 0 },
+        { name: 'TypeScript', icon: 'devicon-typescript-plain colored', level: 0 },
+        { name: 'RxJS', icon: 'devicon-javascript-plain colored', level: 0 }, // no hay RxJS en devicon
+        { name: 'Reactive Forms', icon: 'bi-ui-checks-grid', level: 0 },
+        { name: 'Bootstrap', icon: 'devicon-bootstrap-plain colored', level: 0 },
+        { name: 'CSS Responsive', icon: 'devicon-css3-plain colored', level: 0 }
       ]
     },
     {
       name: 'Backend & AWS',
       icon: 'bi-server',
       skills: [
-        { name: 'Python 3.12', icon: 'python', level: 0 },
-        { name: 'AWS Lambda', icon: 'aws-lambda', level: 0 },
-        { name: 'PyPDF', icon: 'pypdf', level: 0 },
-        { name: 'API Gateway', icon: 'api-gateway', level: 0 },
-        { name: 'S3', icon: 's3', level: 0 },
-        { name: 'Custom Layers', icon: 'custom-layers', level: 0 }
+        { name: 'Python 3.12', icon: 'devicon-python-plain colored', level: 0 },
+        { name: 'AWS Lambda', icon: 'devicon-amazonwebservices-original colored', level: 0 },
+        { name: 'PyPDF', icon: 'bi-filetype-pdf', level: 0 }, // no existe en devicon
+        { name: 'API Gateway', icon: 'bi-diagram-3', level: 0 },
+        { name: 'S3', icon: 'devicon-amazonwebservices-original colored', level: 0 },
+        { name: 'Custom Layers', icon: 'bi-layers', level: 0 }
       ]
     },
     {
       name: 'Arquitectura',
       icon: 'bi-layers',
       skills: [
-        { name: 'Arquitectura Hexagonal', icon: 'hexagonal-architecture', level: 0 },
-        { name: 'Microservicios', icon: 'microservices', level: 0 },
-        { name: 'CQRS', icon: 'cqrs', level: 0 },
-        { name: 'DTOs', icon: 'dtos', level: 0 },
-        { name: 'Separación por Dominios', icon: 'domain-separation', level: 0 }
+        { name: 'Arquitectura Hexagonal', icon: 'bi-hexagon', level: 0 },
+        { name: 'Microservicios', icon: 'bi-diagram-3-fill', level: 0 },
+        { name: 'CQRS', icon: 'bi-arrow-left-right', level: 0 },
+        { name: 'DTOs', icon: 'bi-diagram-2', level: 0 },
+        { name: 'Separación por Dominios', icon: 'bi-diagram-3', level: 0 }
       ]
     },
     {
       name: 'Integraciones',
       icon: 'bi-plug',
       skills: [
-        { name: 'BeAware360 APIs', icon: 'beaware360', level: 0 },
-        { name: 'WSO2 OAuth2', icon: 'wso2', level: 0 },
-        { name: 'Maestro Distribuidores', icon: 'maestro-distribuidores', level: 0 },
-        { name: 'Componente Validador', icon: 'validator-component', level: 0 },
-        { name: 'Requests', icon: 'requests', level: 0 }
+        { name: 'BeAware360 APIs', icon: 'bi-globe2', level: 0 },
+        { name: 'WSO2 OAuth2', icon: 'bi-shield-lock', level: 0 },
+        { name: 'Maestro Distribuidores', icon: 'bi-building', level: 0 },
+        { name: 'Componente Validador', icon: 'bi-check2-circle', level: 0 },
+        { name: 'Requests', icon: 'bi-arrow-repeat', level: 0 }
       ]
     },
     {
       name: 'DevOps & CI/CD',
       icon: 'bi-gear',
       skills: [
-        { name: 'CI/CD Pipelines', icon: 'cicd-pipelines', level: 0 },
-        { name: 'ConfigParser', icon: 'config-parser', level: 0 },
-        { name: 'Logging Estructurado', icon: 'structured-logging', level: 0 },
-        { name: 'Gestión de Entornos', icon: 'environment-management', level: 0 },
-        { name: 'Despliegues Automatizados', icon: 'automated-deployments', level: 0 }
+        { name: 'CI/CD Pipelines', icon: 'bi-arrow-repeat', level: 0 },
+        { name: 'ConfigParser', icon: 'bi-gear-fill', level: 0 },
+        { name: 'Logging Estructurado', icon: 'bi-terminal', level: 0 },
+        { name: 'Gestión de Entornos', icon: 'bi-hdd-network', level: 0 },
+        { name: 'Despliegues Automatizados', icon: 'bi-cloud-upload', level: 0 }
       ]
     },
     {
       name: 'Habilidades Profesionales',
       icon: 'bi-people',
       skills: [
-        { name: 'Comunicación con Clientes', icon: 'client-communication', level: 0 },
-        { name: 'Facilitación de Workshops', icon: 'workshop-facilitation', level: 0 },
-        { name: 'Demos con Stakeholders', icon: 'stakeholder-demos', level: 0 },
-        { name: 'Documentación Técnica', icon: 'technical-documentation', level: 0 },
-        { name: 'Estimación de Esfuerzos', icon: 'effort-estimation', level: 0 }
+        { name: 'Comunicación con Clientes', icon: 'bi-people', level: 0 },
+        { name: 'Facilitación de Workshops', icon: 'bi-easel', level: 0 },
+        { name: 'Demos con Stakeholders', icon: 'bi-easel2', level: 0 },
+        { name: 'Documentación Técnica', icon: 'bi-journal-code', level: 0 },
+        { name: 'Estimación de Esfuerzos', icon: 'bi-clipboard-check', level: 0 }
       ]
     }
   ];
@@ -153,7 +153,6 @@ export class SkillsComponent implements OnInit {
         particle.x += particle.speedX;
         particle.y += particle.speedY;
 
-        // Reset position if out of bounds
         if (particle.x < 0 || particle.x > window.innerWidth) {
           particle.speedX *= -1;
         }
@@ -161,7 +160,6 @@ export class SkillsComponent implements OnInit {
           particle.speedY *= -1;
         }
 
-        // Keep particles in bounds
         particle.x = Math.max(0, Math.min(window.innerWidth, particle.x));
         particle.y = Math.max(0, Math.min(window.innerHeight, particle.y));
       });

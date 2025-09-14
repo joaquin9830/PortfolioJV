@@ -4,6 +4,27 @@
 /* Importar DevIcons */
 @import url('https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css');
 
+/* Estilos específicos para DevIcons */
+.devicon {
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Asegurar que los iconos de DevIcons se muestren correctamente */
+i[class*="devicon-"] {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /* Variables CSS para sistema de diseño */
 :root {
   /* Paleta de colores azul moderna */
