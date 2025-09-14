@@ -1,53 +1,176 @@
-<div class="desarrollador-frontend-section" data-aos="zoom-in">
-    <a href="#education"><button class="back-button"><i class="bi bi-arrow-left-square"></i></button></a>
-    <div class="desarrollador-frontend-content">
-        <h1>Técnico Universitario en Programación</h1>
-        <h2>Universidad Tecnológica Nacional</h2>
-        <p>
-            Como técnico Universitario en Programación poseo conocimientos y práctica que me permiten:
+<!-- Sección de Educación UTN Mejorada -->
+<section class="education-detail-section">
+  <!-- Partículas de fondo -->
+  <div class="particles-container">
+    <div class="particle" *ngFor="let particle of particles"></div>
+  </div>
+  
+  <!-- Gradientes animados -->
+  <div class="section-background">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+  </div>
 
-        </p>
-        <ul>
-            <li>Analizar un problema de procesamiento de datos y desarrollarlo en un lenguaje apropiado para su
-                resolución por una computadora, seleccionando el algoritmo adecuado, la técnica de procesamiento
-                correspondiente y conformando un programa correctamente estructurado.</li>
-            <li>Elaborar y corregir los programas en lenguajes superiores.</li>
-            <li>Realizar la elaboración detallada de tareas específicas definidas por el Analista de Sistemas de Computación.</li>
-        </ul>
-        <div class="skills-section">
-            <div class="skills-column">
-                <h3>Frontend</h3>
-                <ul class="skills-list">
-                    <li><img src="../../../assets/icons/skills/html.png" alt="HTML"> <span>HTML5</span></li>
-                    <li><img src="../../../assets/icons/skills/css.png" alt="CSS"> <span>CSS</span></li>
-                    <li><img src="../../../assets/icons/skills/javascript.png" alt="JavaScript"> <span>JavaScript</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="skills-column">
-                <h3>Backend</h3>
-                <ul class="skills-list">
-                    <li><img src="../../../assets/icons/skills/java.png" alt="Java"> <span>Java</span></li>
-                    <li><img src="../../../assets/icons/skills/python.png" alt="Python"> <span>Python</span></li>                    
-                </ul>
-            </div>
-            <div class="skills-column">
-                <h3>DB</h3>
-                <ul class="skills-list">
-                    <li><img src="../../../assets/icons/skills/mysql.png" alt="MySQL"> <span>MySQL</span></li>
-                    <li><img src="../../../assets/icons/skills/postgres.png" alt="PostgreSQL"> <span>PostgreSQL</span>
-                    </li>
-                    
-                </ul>
-            </div>
-            <div class="skills-column">
-                <h3>Tools</h3>
-                <ul class="skills-list">
-                    <li><img src="../../../assets/icons/skills/git.png" alt="Git"> <span>Git</span></li>
-                    <li><img src="../../../assets/icons/skills/github.png" alt="GitHub"> <span>GitHub</span></li>
-                    <li><img src="../../../assets/icons/skills/scrum.png" alt="Scrum"> <span>Scrum</span></li>
-                </ul>
-            </div>
-        </div>
+  <div class="education-detail-container">
+    <!-- Botón de regreso -->
+    <div class="back-button-container">
+      <a href="#education" class="back-button">
+        <i class="bi bi-arrow-left"></i>
+        <span>Volver a Educación</span>
+      </a>
     </div>
-</div>
+
+    <!-- Header de la educación -->
+    <div class="education-header">
+      <div class="institution-badge">
+        <i class="bi bi-mortarboard"></i>
+        <span>Universidad</span>
+      </div>
+      <h1 class="education-title">Técnico Universitario en Programación</h1>
+      <h2 class="institution-name">Universidad Tecnológica Nacional</h2>
+      <div class="education-meta">
+        <span class="duration">2020 - 2023</span>
+        <span class="status completed">Completado</span>
+      </div>
+    </div>
+
+    <!-- Descripción principal -->
+    <div class="education-description">
+      <div class="description-card">
+        <h3>Perfil Profesional</h3>
+        <p>
+          Como técnico universitario en programación, he desarrollado competencias sólidas en análisis, diseño y 
+          desarrollo de soluciones informáticas. Mi formación me permite abordar problemas complejos de procesamiento 
+          de datos con metodologías estructuradas y eficientes.
+        </p>
+      </div>
+    </div>
+
+    <!-- Competencias desarrolladas -->
+    <div class="competencies-section">
+      <h3>Competencias Desarrolladas</h3>
+      <div class="competencies-grid">
+        <div class="competency-card">
+          <div class="competency-icon">
+            <i class="bi bi-search"></i>
+          </div>
+          <h4>Análisis de Problemas</h4>
+          <p>Capacidad para analizar problemas de procesamiento de datos y seleccionar algoritmos y técnicas apropiadas para su resolución.</p>
+        </div>
+        
+        <div class="competency-card">
+          <div class="competency-icon">
+            <i class="bi bi-code-slash"></i>
+          </div>
+          <h4>Desarrollo de Programas</h4>
+          <p>Elaboración y corrección de programas en lenguajes de programación superiores con estructuras bien definidas.</p>
+        </div>
+        
+        <div class="competency-card">
+          <div class="competency-icon">
+            <i class="bi bi-gear"></i>
+          </div>
+          <h4>Implementación Técnica</h4>
+          <p>Realización de tareas específicas definidas por analistas de sistemas, aplicando metodologías de desarrollo.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tecnologías aprendidas -->
+    <div class="technologies-section">
+      <h3>Tecnologías Dominadas</h3>
+      <div class="tech-categories">
+        <div class="tech-category">
+          <div class="category-header">
+            <i class="bi bi-layout-text-window-reverse"></i>
+            <h4>Frontend</h4>
+          </div>
+          <div class="tech-items">
+            <div class="tech-item">
+              <img src="../../../assets/icons/skills/html.png" alt="HTML5">
+              <span>HTML5</span>
+            </div>
+            <div class="tech-item">
+              <img src="../../../assets/icons/skills/css.png" alt="CSS3">
+              <span>CSS3</span>
+            </div>
+            <div class="tech-item">
+              <img src="../../../assets/icons/skills/javascript.png" alt="JavaScript">
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <div class="category-header">
+            <i class="bi bi-server"></i>
+            <h4>Backend</h4>
+          </div>
+          <div class="tech-items">
+            <div class="tech-item">
+              <img src="../../../assets/icons/skills/java.png" alt="Java">
+              <span>Java</span>
+            </div>
+            <div class="tech-item">
+              <img src="../../../assets/icons/skills/python.png" alt="Python">
+              <span>Python</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <div class="category-header">
+            <i class="bi bi-database"></i>
+            <h4>Bases de Datos</h4>
+          </div>
+          <div class="tech-items">
+            <div class="tech-item">
+              <img src="../../../assets/icons/skills/mysql.png" alt="MySQL">
+              <span>MySQL</span>
+            </div>
+            <div class="tech-item">
+              <img src="../../../assets/icons/skills/postgres.png" alt="PostgreSQL">
+              <span>PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <div class="category-header">
+            <i class="bi bi-tools"></i>
+            <h4>Herramientas</h4>
+          </div>
+          <div class="tech-items">
+            <div class="tech-item">
+              <img src="../../../assets/icons/skills/git.png" alt="Git">
+              <span>Git</span>
+            </div>
+            <div class="tech-item">
+              <img src="../../../assets/icons/skills/github.png" alt="GitHub">
+              <span>GitHub</span>
+            </div>
+            <div class="tech-item">
+              <img src="../../../assets/icons/skills/scrum.png" alt="Scrum">
+              <span>Scrum</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Call to action -->
+    <div class="education-cta">
+      <div class="cta-content">
+        <h4>¿Interesado en mi formación técnica?</h4>
+        <p>Descarga mi CV completo para ver todos mis proyectos y certificaciones</p>
+        <a href="../../../assets/document/Programador CV Joaquín Viñolo.pdf.pdf" 
+           class="btn btn-primary btn-lg" 
+           download>
+          <i class="bi bi-download"></i>
+          <span>Descargar CV</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

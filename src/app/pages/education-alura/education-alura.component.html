@@ -1,52 +1,200 @@
-<div class="desarrollador-frontend-section" data-aos="zoom-in">
-  <a href="#education-alura"><button class="back-button"><i class="bi bi-arrow-left-square"></i></button></a>
-  <div class="desarrollador-frontend-content">
-    <h1>Desarrollador Frontend</h1>
-    <h2>Alura Latam</h2>
-    <p>
-      Como Desarrollador Frontend, me especializo en crear la interfaz de usuario de aplicaciones web. Mis habilidades
-      incluyen el uso avanzado de tecnologías frontend para proporcionar experiencias de usuario intuitivas y
-      atractivas.
-    </p>
-    <div class="skills-section">
-      <div class="skills-column">
-        <h3>HTML</h3>
-        <ul class="skills-list">
-          <li><img src="../../../assets/icons/skills/html.png" alt="HTML"> <span>HTML5</span></li>
-          <li><img src="../../../assets/icons/skills/semantica.png" alt="HTML"> <span>Semántica</span></li>
-          <li><img src="../../../assets/icons/skills/estructura-html.png" alt="HTML"> <span>Estructura</span></li>
-        </ul>
+<!-- Sección de Educación Alura Mejorada -->
+<section class="education-detail-section">
+  <!-- Partículas de fondo -->
+  <div class="particles-container">
+    <div class="particle" *ngFor="let particle of particles"></div>
+  </div>
+  
+  <!-- Gradientes animados -->
+  <div class="section-background">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+  </div>
+
+  <div class="education-detail-container">
+    <!-- Botón de regreso -->
+    <div class="back-button-container">
+      <a href="#education" class="back-button">
+        <i class="bi bi-arrow-left"></i>
+        <span>Volver a Educación</span>
+      </a>
+    </div>
+
+    <!-- Header de la educación -->
+    <div class="education-header">
+      <div class="institution-badge">
+        <i class="bi bi-code-slash"></i>
+        <span>Plataforma Online</span>
       </div>
-      <div class="skills-column">
-        <h3>CSS</h3>
-        <ul class="skills-list">
-          <li><img src="../../../assets/icons/skills/css.png" alt="CSS"> <span>CSS3</span></li>
-          <li><img src="../../../assets/icons/skills/flexbox.png" alt="CSS"> <span>Flexbox</span></li>
-          <li><img src="../../../assets/icons/skills/grid.png" alt="CSS"> <span>Grid</span></li>
-          <li><img src="../../../assets/icons/skills/layout-responsive.png" alt="CSS"> <span>Layouts</span></li>
-        </ul>
+      <h1 class="education-title">Desarrollador Frontend</h1>
+      <h2 class="institution-name">Alura Latam</h2>
+      <div class="education-meta">
+        <span class="duration">2023</span>
+        <span class="status completed">Completado</span>
       </div>
-      <div class="skills-column">
-        <h3>JavaScript</h3>
-        <ul class="skills-list">
-          <li><img src="../../../assets/icons/skills/es6+.png" alt="JavaScript"> <span>ES6+</span></li>
-          <li><img src="../../../assets/icons/skills/dom.png" alt="JavaScript"> <span>DOM Manipulation</span></li>
-          <li><img src="../../../assets/icons/skills/javascript.png" alt="JavaScript"> <span>Event Handling</span></li>
-          <li><img src="../../../assets/icons/skills/javascript-form.png" alt="JavaScript"> <span>Formularios</span>
-          </li>
-          <li><img src="../../../assets/icons/skills/javascript-asincrono.png" alt="JavaScript"> <span>JS
-              Asíncrono</span></li>
-        </ul>
+    </div>
+
+    <!-- Descripción principal -->
+    <div class="education-description">
+      <div class="description-card">
+        <h3>Especialización Frontend</h3>
+        <p>
+          Especialización completa en desarrollo frontend moderno, enfocándome en crear interfaces de usuario 
+          intuitivas y atractivas. Mi formación en Alura me permitió dominar las tecnologías más demandadas 
+          del mercado actual y las mejores prácticas de desarrollo web.
+        </p>
       </div>
-      <div class="skills-column">
-        <h3>Frameworks</h3>
-        <ul class="skills-list">
-          <li><img src="../../../assets/icons/skills/react.png" alt="React"> <span>React.js</span></li>
-          <li><img src="../../../assets/icons/skills/react.png" alt="React"> <span>React Router</span></li>
-          <li><img src="../../../assets/icons/skills/react.png" alt="React"> <span>Hooks</span></li>
-          <li><img src="../../../assets/icons/skills/react.png" alt="React"> <span>Components</span></li>
-        </ul>
+    </div>
+
+    <!-- Competencias desarrolladas -->
+    <div class="competencies-section">
+      <h3>Competencias Desarrolladas</h3>
+      <div class="competencies-grid">
+        <div class="competency-card">
+          <div class="competency-icon">
+            <i class="bi bi-layout-text-window"></i>
+          </div>
+          <h4>Desarrollo de Interfaces</h4>
+          <p>Creación de interfaces de usuario modernas y responsivas usando HTML5 semántico y CSS3 avanzado.</p>
+        </div>
+        
+        <div class="competency-card">
+          <div class="competency-icon">
+            <i class="bi bi-gear-wide-connected"></i>
+          </div>
+          <h4>JavaScript Moderno</h4>
+          <p>Dominio de ES6+, manipulación del DOM, manejo de eventos y programación asíncrona.</p>
+        </div>
+        
+        <div class="competency-card">
+          <div class="competency-icon">
+            <i class="bi bi-layers"></i>
+          </div>
+          <h4>Frameworks React</h4>
+          <p>Desarrollo de aplicaciones complejas usando React, Hooks, Router y componentes reutilizables.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tecnologías aprendidas -->
+    <div class="technologies-section">
+      <h3>Tecnologías Dominadas</h3>
+      <div class="tech-categories">
+        <div class="tech-category">
+          <div class="category-header">
+            <i class="bi bi-file-code"></i>
+            <h4>HTML5</h4>
+          </div>
+          <div class="tech-items">
+            <div class="tech-item">
+              <img src="../../../assets/icons/skills/html.png" alt="HTML5">
+              <span>HTML5</span>
+            </div>
+            <div class="tech-item">
+              <img src="../../../assets/icons/skills/semantica.png" alt="Semántica">
+              <span>Semántica</span>
+            </div>
+            <div class="tech-item">
+              <img src="../../../assets/icons/skills/estructura-html.png" alt="Estructura">
+              <span>Estructura</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <div class="category-header">
+            <i class="bi bi-palette"></i>
+            <h4>CSS3</h4>
+          </div>
+          <div class="tech-items">
+            <div class="tech-item">
+              <img src="../../../assets/icons/skills/css.png" alt="CSS3">
+              <span>CSS3</span>
+            </div>
+            <div class="tech-item">
+              <img src="../../../assets/icons/skills/flexbox.png" alt="Flexbox">
+              <span>Flexbox</span>
+            </div>
+            <div class="tech-item">
+              <img src="../../../assets/icons/skills/grid.png" alt="Grid">
+              <span>Grid</span>
+            </div>
+            <div class="tech-item">
+              <img src="../../../assets/icons/skills/layout-responsive.png" alt="Responsive">
+              <span>Responsive</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <div class="category-header">
+            <i class="bi bi-lightning"></i>
+            <h4>JavaScript</h4>
+          </div>
+          <div class="tech-items">
+            <div class="tech-item">
+              <img src="../../../assets/icons/skills/es6+.png" alt="ES6+">
+              <span>ES6+</span>
+            </div>
+            <div class="tech-item">
+              <img src="../../../assets/icons/skills/dom.png" alt="DOM">
+              <span>DOM Manipulation</span>
+            </div>
+            <div class="tech-item">
+              <img src="../../../assets/icons/skills/javascript.png" alt="Events">
+              <span>Event Handling</span>
+            </div>
+            <div class="tech-item">
+              <img src="../../../assets/icons/skills/javascript-form.png" alt="Forms">
+              <span>Formularios</span>
+            </div>
+            <div class="tech-item">
+              <img src="../../../assets/icons/skills/javascript-asincrono.png" alt="Async">
+              <span>JS Asíncrono</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <div class="category-header">
+            <i class="bi bi-layers"></i>
+            <h4>React</h4>
+          </div>
+          <div class="tech-items">
+            <div class="tech-item">
+              <img src="../../../assets/icons/skills/react.png" alt="React">
+              <span>React.js</span>
+            </div>
+            <div class="tech-item">
+              <img src="../../../assets/icons/skills/react.png" alt="Router">
+              <span>React Router</span>
+            </div>
+            <div class="tech-item">
+              <img src="../../../assets/icons/skills/react.png" alt="Hooks">
+              <span>Hooks</span>
+            </div>
+            <div class="tech-item">
+              <img src="../../../assets/icons/skills/react.png" alt="Components">
+              <span>Components</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Call to action -->
+    <div class="education-cta">
+      <div class="cta-content">
+        <h4>¿Interesado en mis habilidades frontend?</h4>
+        <p>Descarga mi CV para ver todos mis proyectos y certificaciones</p>
+        <a href="../../../assets/document/Programador CV Joaquín Viñolo.pdf.pdf" 
+           class="btn btn-primary btn-lg" 
+           download>
+          <i class="bi bi-download"></i>
+          <span>Descargar CV</span>
+        </a>
       </div>
     </div>
   </div>
-</div>
+</section>

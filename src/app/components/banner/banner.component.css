@@ -142,22 +142,26 @@
   font-family: var(--font-heading);
   font-size: var(--text-6xl);
   font-weight: 800;
-  line-height: 0.9;
+  line-height: 1.1;
   margin-bottom: var(--space-6);
-  background: var(--gradient-text);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary-400);
+  position: relative;
+  z-index: 2;
 }
 
 .title-line {
   display: block;
-  animation: titleSlideIn 1s ease-out;
+  margin-bottom: var(--space-2);
+  opacity: 1;
+  visibility: visible;
+  color: inherit;
 }
 
 .title-line:nth-child(2) {
-  animation-delay: 0.2s;
-  animation-fill-mode: both;
+  margin-bottom: 0;
+  opacity: 1;
+  visibility: visible;
+  color: var(--primary-400);
 }
 
 @keyframes titleSlideIn {
@@ -182,6 +186,14 @@
 
 .subtitle-text {
   color: var(--text-secondary);
+}
+
+.subtitle-highlight {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
 }
 
 .typing-text {
@@ -283,8 +295,8 @@
 
 .floating-icon {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   background: var(--bg-glass);
   border: 2px solid var(--primary-500);
   border-radius: var(--border-radius-xl);
@@ -293,11 +305,23 @@
   justify-content: center;
   backdrop-filter: blur(10px);
   animation: floatIcon 4s ease-in-out infinite;
+  z-index: 10;
 }
 
 .floating-icon i {
   font-size: var(--text-xl);
   color: var(--primary-400);
+}
+
+/* Posicionamiento específico de iconos */
+.floating-icon:nth-child(1) {
+  top: 10%;
+  left: 10%;
+}
+
+.floating-icon:nth-child(2) {
+  top: 10%;
+  right: 10%;
 }
 
 .floating-icon:nth-child(odd) {
@@ -309,8 +333,14 @@
 }
 
 @keyframes floatIcon {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-10px) rotate(180deg); }
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg) scale(1); 
+    opacity: 0.8;
+  }
+  50% { 
+    transform: translateY(-15px) rotate(180deg) scale(1.1); 
+    opacity: 1;
+  }
 }
 
 /* Tags de tecnologías */
@@ -326,8 +356,8 @@
 .tag {
   display: flex;
   align-items: center;
-  gap: var(--space-2);
-  padding: var(--space-2) var(--space-4);
+  justify-content: center;
+  padding: var(--space-3) var(--space-5);
   background: var(--bg-glass);
   border: 1px solid var(--primary-500);
   border-radius: var(--border-radius-full);
@@ -355,9 +385,6 @@
   box-shadow: var(--shadow-glow);
 }
 
-.tag i {
-  font-size: var(--text-base);
-}
 
 @keyframes tagSlideIn {
   from {
@@ -627,23 +654,49 @@
 @media (max-width: 480px) {
   .hero-section {
     padding: var(--space-12) 0;
+    min-height: 100vh;
+  }
+
+  .hero-container {
+    padding: 0 var(--space-3);
   }
 
   .hero-title {
-    font-size: var(--text-3xl);
+    font-size: var(--text-2xl);
+    line-height: 1.1;
+  }
+
+  .title-line {
+    display: block;
+    margin-bottom: var(--space-1);
+    opacity: 1;
+    visibility: visible;
+    color: var(--primary-400);
+  }
+
+  .title-line:nth-child(2) {
+    margin-bottom: 0;
+    opacity: 1;
+    visibility: visible;
+    color: var(--primary-400);
   }
 
   .hero-subtitle {
     font-size: var(--text-lg);
+    margin-bottom: var(--space-4);
   }
 
   .hero-description {
     font-size: var(--text-sm);
+    line-height: 1.6;
+    margin-bottom: var(--space-6);
+    text-align: center;
   }
 
   .image-container {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
+    margin-top: var(--space-6);
   }
 
   .floating-icon {
@@ -656,16 +709,21 @@
   }
 
   .tech-tags {
-    gap: var(--space-1);
+    gap: var(--space-2);
+    flex-direction: column;
+    align-items: center;
   }
 
   .tag {
-    padding: var(--space-1) var(--space-2);
-    font-size: 0.7rem;
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--text-xs);
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
   }
 
-  .tag i {
-    font-size: var(--text-xs);
+  .hero-content {
+    text-align: center;
   }
 
   .scroll-indicator {

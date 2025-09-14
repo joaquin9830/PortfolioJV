@@ -36,17 +36,17 @@ export class ServicesComponent implements OnInit {
         'Separación de responsabilidades',
         'Manejo de excepciones personalizadas'
       ],
-      technologies: ['Python 3.12', 'AWS Lambda', 'Arquitectura Hexagonal', 'CQRS']
+      technologies: ['Python', 'AWS Lambda', 'Clean Architecture']
     },
     {
       title: 'Integraciones Corporativas',
       description: 'Implementación de clientes base con manejo de tokens OAuth2, caché de credenciales y llamadas seguras a servicios externos.',
       icon: 'bi-plug',
       features: [
-        'BeAware360 APIs',
-        'WSO2 OAuth2',
-        'Maestro Distribuidores',
-        'Componente Validador'
+        'Integraciones complejas',
+        'Automatizaciones',
+        'Bots inteligentes',
+        'APIs corporativas'
       ],
       technologies: ['Python', 'Requests', 'OAuth2', 'API Integration']
     },
@@ -55,24 +55,24 @@ export class ServicesComponent implements OnInit {
       description: 'Desarrollo de portales modulares y escalables con routing avanzado, formularios reactivos y componentes standalone.',
       icon: 'bi-layout-text-window',
       features: [
-        'Angular 18+',
+        'Angular moderno',
         'Formularios reactivos',
         'Componentes standalone',
         'Routing avanzado'
       ],
-      technologies: ['Angular 18+', 'TypeScript', 'RxJS', 'Bootstrap']
+      technologies: ['Angular', 'TypeScript', 'RxJS', 'Bootstrap']
     },
     {
-      title: 'PDF Automation & AWS',
-      description: 'Generación y manipulación de PDFs con anotaciones, normalización de caracteres y plantillas empaquetadas en Lambda.',
-      icon: 'bi-file-text',
+      title: 'Automatización & AWS',
+      description: 'Automatización de procesos complejos con AWS Lambda, Custom Layers y soluciones serverless escalables.',
+      icon: 'bi-gear-fill',
       features: [
-        'PyPDF automation',
-        'Plantillas empaquetadas',
-        'Custom Layers AWS',
-        'Compatibilidad multi-visor'
+        'Automatización de procesos',
+        'AWS Lambda avanzado',
+        'Custom Layers',
+        'Soluciones serverless'
       ],
-      technologies: ['PyPDF', 'AWS Lambda', 'Custom Layers', 'PDF Processing']
+      technologies: ['AWS Lambda', 'Python', 'Custom Layers', 'Serverless']
     },
     {
       title: 'DevOps & CI/CD',

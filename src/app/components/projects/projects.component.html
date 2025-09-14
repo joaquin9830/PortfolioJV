@@ -117,6 +117,25 @@
               <span>{{ project.status === 'completed' ? 'Completado' : 'En desarrollo' }}</span>
             </div>
           </div>
+
+          <!-- Links del proyecto -->
+          <div class="project-links">
+            <a *ngIf="project.website" 
+               [href]="project.website" 
+               target="_blank" 
+               class="project-link website-link"
+               title="Ver sitio web">
+              <i class="bi bi-globe"></i>
+              <span>Ver sitio</span>
+            </a>
+            <a [href]="project.github" 
+               target="_blank" 
+               class="project-link github-link"
+               title="Ver código en GitHub">
+              <i class="bi bi-github"></i>
+              <span>GitHub</span>
+            </a>
+          </div>
         </div>
 
         <!-- Efecto hover -->

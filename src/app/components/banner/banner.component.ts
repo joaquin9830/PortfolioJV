@@ -29,25 +29,21 @@ interface FloatingIcon {
 export class BannerComponent implements OnInit, OnDestroy {
   particles: Particle[] = [];
   currentWordIndex = 0;
-  typingWords = ['Full Stack', 'Arquitectura Hexagonal', 'AWS Lambda', 'Python 3.12', 'Microservicios'];
+  typingWords = ['Full Stack', 'Portal Developer', 'Lambda Expert', 'Client Solutions', 'Cloud Architect'];
   private typingInterval: any;
 
   technologies: Technology[] = [
-    { name: 'Python 3.12', icon: 'bi-code-slash' },
+    { name: 'Python', icon: 'bi-code-slash' },
     { name: 'AWS Lambda', icon: 'bi-cloud' },
-    { name: 'Angular 18+', icon: 'bi-layout-text-window' },
-    { name: 'Arquitectura Hexagonal', icon: 'bi-layers' },
-    { name: 'PyPDF', icon: 'bi-file-text' },
-    { name: 'Microservicios', icon: 'bi-gear' }
+    { name: 'Angular', icon: 'bi-layout-text-window' },
+    { name: 'Desarrollo de Portales', icon: 'bi-window' },
+    { name: 'Integración con Clientes', icon: 'bi-people' },
+    { name: 'Soluciones Cloud', icon: 'bi-gear' }
   ];
 
   floatingIcons: FloatingIcon[] = [
-    { class: 'bi bi-cloud', x: 20, y: 30, delay: 0 },
-    { class: 'bi bi-layers', x: 80, y: 20, delay: 0.5 },
-    { class: 'bi bi-code-slash', x: 15, y: 70, delay: 1 },
-    { class: 'bi bi-file-code', x: 85, y: 60, delay: 1.5 },
-    { class: 'bi bi-gear', x: 50, y: 10, delay: 2 },
-    { class: 'bi bi-plug', x: 25, y: 50, delay: 2.5 }
+    { class: 'bi bi-heart-fill', x: 20, y: 30, delay: 0 },
+    { class: 'devicon-angularjs-plain', x: 80, y: 20, delay: 0.5 }
   ];
 
   ngOnInit(): void {
@@ -62,15 +58,26 @@ export class BannerComponent implements OnInit, OnDestroy {
     }
   }
 
+
   private generateParticles(): void {
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < 20; i++) {
+      // Evitar partículas en el área central donde está la imagen
+      let x, y;
+      do {
+        x = Math.random() * window.innerWidth;
+        y = Math.random() * window.innerHeight;
+      } while (
+        (x > window.innerWidth * 0.3 && x < window.innerWidth * 0.7 && 
+         y > window.innerHeight * 0.2 && y < window.innerHeight * 0.8)
+      );
+      
       this.particles.push({
-        x: Math.random() * window.innerWidth,
-        y: Math.random() * window.innerHeight,
-        size: Math.random() * 3 + 1,
-        speedX: (Math.random() - 0.5) * 0.5,
-        speedY: (Math.random() - 0.5) * 0.5,
-        opacity: Math.random() * 0.5 + 0.1
+        x: x,
+        y: y,
+        size: Math.random() * 2 + 1,
+        speedX: (Math.random() - 0.5) * 0.3,
+        speedY: (Math.random() - 0.5) * 0.3,
+        opacity: Math.random() * 0.3 + 0.1
       });
     }
   }

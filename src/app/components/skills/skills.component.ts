@@ -37,9 +37,9 @@ export class SkillsComponent implements OnInit {
   isVisible = false;
 
   skillsStats: SkillStat[] = [
-    { value: '30+', label: 'Tecnologías', icon: 'bi-code-slash' },
+    { value: '25+', label: 'Tecnologías', icon: 'bi-code-slash' },
     { value: '3+', label: 'Años de Experiencia', icon: 'bi-calendar-check' },
-    { value: '6', label: 'Categorías', icon: 'bi-grid-3x3' },
+    { value: '4', label: 'Categorías', icon: 'bi-grid-3x3' },
     { value: 'AWS', label: 'Especialización', icon: 'bi-cloud' }
   ];
 
@@ -48,7 +48,7 @@ export class SkillsComponent implements OnInit {
       name: 'Frontend',
       icon: 'bi-layout-text-window',
       skills: [
-        { name: 'Angular 18+', icon: 'devicon-angularjs-plain colored', level: 0 },
+        { name: 'Angular', icon: 'devicon-angularjs-plain colored', level: 0 },
         { name: 'TypeScript', icon: 'devicon-typescript-plain colored', level: 0 },
         { name: 'RxJS', icon: 'devicon-javascript-plain colored', level: 0 }, // no hay RxJS en devicon
         { name: 'Reactive Forms', icon: 'bi-ui-checks-grid', level: 0 },
@@ -60,9 +60,8 @@ export class SkillsComponent implements OnInit {
       name: 'Backend & AWS',
       icon: 'bi-server',
       skills: [
-        { name: 'Python 3.12', icon: 'devicon-python-plain colored', level: 0 },
+        { name: 'Python', icon: 'devicon-python-plain colored', level: 0 },
         { name: 'AWS Lambda', icon: 'devicon-amazonwebservices-original colored', level: 0 },
-        { name: 'PyPDF', icon: 'bi-filetype-pdf', level: 0 }, // no existe en devicon
         { name: 'API Gateway', icon: 'bi-diagram-3', level: 0 },
         { name: 'S3', icon: 'devicon-amazonwebservices-original colored', level: 0 },
         { name: 'Custom Layers', icon: 'bi-layers', level: 0 }
@@ -72,33 +71,9 @@ export class SkillsComponent implements OnInit {
       name: 'Arquitectura',
       icon: 'bi-layers',
       skills: [
-        { name: 'Arquitectura Hexagonal', icon: 'bi-hexagon', level: 0 },
-        { name: 'Microservicios', icon: 'bi-diagram-3-fill', level: 0 },
-        { name: 'CQRS', icon: 'bi-arrow-left-right', level: 0 },
-        { name: 'DTOs', icon: 'bi-diagram-2', level: 0 },
+        { name: 'Clean Architecture', icon: 'bi-hexagon', level: 0 },
+        { name: 'Microservices', icon: 'bi-diagram-3-fill', level: 0 },
         { name: 'Separación por Dominios', icon: 'bi-diagram-3', level: 0 }
-      ]
-    },
-    {
-      name: 'Integraciones',
-      icon: 'bi-plug',
-      skills: [
-        { name: 'BeAware360 APIs', icon: 'bi-globe2', level: 0 },
-        { name: 'WSO2 OAuth2', icon: 'bi-shield-lock', level: 0 },
-        { name: 'Maestro Distribuidores', icon: 'bi-building', level: 0 },
-        { name: 'Componente Validador', icon: 'bi-check2-circle', level: 0 },
-        { name: 'Requests', icon: 'bi-arrow-repeat', level: 0 }
-      ]
-    },
-    {
-      name: 'DevOps & CI/CD',
-      icon: 'bi-gear',
-      skills: [
-        { name: 'CI/CD Pipelines', icon: 'bi-arrow-repeat', level: 0 },
-        { name: 'ConfigParser', icon: 'bi-gear-fill', level: 0 },
-        { name: 'Logging Estructurado', icon: 'bi-terminal', level: 0 },
-        { name: 'Gestión de Entornos', icon: 'bi-hdd-network', level: 0 },
-        { name: 'Despliegues Automatizados', icon: 'bi-cloud-upload', level: 0 }
       ]
     },
     {

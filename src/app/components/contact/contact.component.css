@@ -1,23 +1,115 @@
-/* Estilos específicos del componente de contacto */
+/* Sección Contacto Espectacular */
 .contact-section {
+  min-height: 100vh;
   position: relative;
-}
-
-.contact-section::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23667eea" stroke-width="0.5" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
-  opacity: 0.3;
+  overflow: hidden;
+  padding: var(--space-20) 0;
+  display: flex;
+  align-items: center;
   z-index: 1;
 }
 
+/* Partículas de fondo */
+.particles-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  background: var(--primary-400);
+  border-radius: 50%;
+  opacity: 0.1;
+  animation: particleFloat 15s infinite linear;
+}
+
+@keyframes particleFloat {
+  0% {
+    transform: translateY(100vh) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateY(-100px) translateX(100px);
+    opacity: 0;
+  }
+}
+
+/* Gradientes animados de fondo */
+.section-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.gradient-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  animation: orbFloat 20s ease-in-out infinite;
+}
+
+.orb-1 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, var(--primary-500) 0%, transparent 70%);
+  top: 10%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.orb-2 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, var(--secondary-500) 0%, transparent 70%);
+  top: 60%;
+  right: 10%;
+  animation-delay: -7s;
+}
+
+.orb-3 {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, var(--accent-500) 0%, transparent 70%);
+  bottom: 20%;
+  left: 50%;
+  animation-delay: -14s;
+}
+
+@keyframes orbFloat {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -30px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}
+
+/* Contenedor principal */
 .contact-container {
   position: relative;
-  z-index: 2;
+  z-index: 3;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+  width: 100%;
 }
 
 /* Animaciones de entrada */
@@ -91,18 +183,144 @@
   box-shadow: var(--shadow-lg);
 }
 
+/* Spinner de carga */
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid transparent;
+  border-top: 2px solid currentColor;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-right: var(--space-2);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.btn-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+}
+
+.btn-content.loading {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 /* Mensajes de estado */
 .success-message {
-  background: rgba(16, 185, 129, 0.1);
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(34, 197, 94, 0.1) 100%);
   border: 1px solid #10b981;
-  border-radius: var(--border-radius-lg);
-  padding: var(--space-4);
-  margin-top: var(--space-4);
-  animation: fadeInUp 0.5s ease-out;
+  border-radius: var(--border-radius-xl);
+  padding: var(--space-6);
+  margin-top: var(--space-6);
+  animation: fadeInUp 0.6s ease-out;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+}
+
+.success-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background: #10b981;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: successPulse 0.6s ease-out;
+}
+
+.success-icon i {
+  color: white;
+  font-size: var(--text-xl);
+}
+
+.success-content h4 {
+  color: #10b981;
+  font-size: var(--text-lg);
+  font-weight: 700;
+  margin: 0 0 var(--space-2) 0;
+}
+
+.success-content p {
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.5;
+}
+
+@keyframes successPulse {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .error-message {
-  animation: shake 0.5s ease-in-out;
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(220, 38, 38, 0.1) 100%);
+  border: 1px solid #ef4444;
+  border-radius: var(--border-radius-xl);
+  padding: var(--space-6);
+  margin-top: var(--space-6);
+  animation: fadeInUp 0.6s ease-out;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+}
+
+.error-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background: #ef4444;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: errorPulse 0.6s ease-out;
+}
+
+.error-icon i {
+  color: white;
+  font-size: var(--text-xl);
+}
+
+.error-content h4 {
+  color: #ef4444;
+  font-size: var(--text-lg);
+  font-weight: 700;
+  margin: 0 0 var(--space-2) 0;
+}
+
+.error-content p {
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.5;
+}
+
+@keyframes errorPulse {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 @keyframes fadeInUp {
@@ -159,17 +377,85 @@
 }
 
 @media (max-width: 480px) {
+  .contact-section {
+    padding: var(--space-12) 0;
+  }
+
   .contact-container {
     padding: 0 var(--space-3);
   }
-  
+
+  .contact-info h2 {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-4);
+  }
+
+  .contact-info p {
+    font-size: var(--text-sm);
+    margin-bottom: var(--space-6);
+  }
+
+  .contact-details {
+    gap: var(--space-3);
+    margin-bottom: var(--space-8);
+  }
+
+  .contact-item {
+    padding: var(--space-3);
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+
+  .contact-icon {
+    width: 35px;
+    height: 35px;
+    font-size: var(--text-base);
+    flex-shrink: 0;
+  }
+
+  .contact-text h4 {
+    font-size: var(--text-sm);
+  }
+
+  .contact-text p {
+    font-size: var(--text-xs);
+  }
+
   .contact-form {
     padding: var(--space-4);
   }
-  
+
   .form-input,
   .form-textarea {
     padding: var(--space-3);
+    font-size: var(--text-sm);
+  }
+
+  .form-label {
+    font-size: var(--text-sm);
+  }
+
+  .form-submit {
+    width: 100%;
+    padding: var(--space-4);
+    font-size: var(--text-base);
+  }
+
+  .success-message,
+  .error-message {
+    padding: var(--space-4);
+    margin-top: var(--space-4);
+  }
+
+  .success-content h4,
+  .error-content h4 {
+    font-size: var(--text-base);
+  }
+
+  .success-content p,
+  .error-content p {
+    font-size: var(--text-sm);
   }
 }
 

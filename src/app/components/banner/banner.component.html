@@ -17,11 +17,6 @@
     <div class="hero-content">
       <!-- Texto principal con animaciones -->
       <div class="hero-text">
-        <div class="greeting">
-          <span class="greeting-text">¡Hola! Soy</span>
-          <div class="cursor-blink">|</div>
-        </div>
-        
         <h1 class="hero-title">
           <span class="title-line">Joaquín</span>
           <span class="title-line">Viñolo</span>
@@ -29,21 +24,18 @@
         
         <div class="hero-subtitle">
           <span class="subtitle-text">Desarrollador</span>
-          <div class="typing-text">
-            <span class="typing-word" *ngFor="let word of typingWords; let i = index" 
-                  [class.active]="currentWordIndex === i">
-              {{ word }}
-            </span>
-          </div>
+          <span class="subtitle-highlight">Full Stack</span>
         </div>
         
         <p class="hero-description">
           Desarrollador <span class="highlight">Full Stack</span> especializado en 
-          <span class="highlight">arquitectura hexagonal</span> y 
-          <span class="highlight">microservicios serverless</span> en AWS Lambda. 
-          En <span class="highlight">In Motion</span> diseño soluciones escalables 
-          con <span class="highlight">Python 3.12</span>, <span class="highlight">Angular 18+</span> 
-          y tecnologías cloud avanzadas.
+          <span class="highlight">portales custom</span> con <span class="highlight">AWS Lambda</span> 
+          y <span class="highlight">Angular</span>, con experiencia integrando 
+          <span class="highlight">APIs corporativas</span> y gestionando 
+          <span class="highlight">entornos cloud</span>. Diseño soluciones escalables 
+          que combinan <span class="highlight">Python</span>, <span class="highlight">infraestructura serverless</span> 
+          y <span class="highlight">trato directo con clientes</span> de negocio para 
+          alinear la tecnología con sus necesidades.
         </p>
       </div>
 
@@ -54,11 +46,13 @@
                class="profile-image" 
                alt="Joaquín Viñolo">
           <div class="image-glow"></div>
-          <div class="floating-elements">
-            <div class="floating-icon" *ngFor="let icon of floatingIcons">
+          <!-- <div class="floating-elements">
+            <div class="floating-icon" 
+                 *ngFor="let icon of floatingIcons; let i = index"
+                 [style.animation-delay]="icon.delay + 's'">
               <i [class]="icon.class"></i>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -66,7 +60,6 @@
     <!-- Tags de tecnologías -->
     <div class="tech-tags">
       <div class="tag" *ngFor="let tech of technologies; let i = index">
-        <i [class]="tech.icon"></i>
         <span>{{ tech.name }}</span>
       </div>
     </div>

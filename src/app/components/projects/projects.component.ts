@@ -47,17 +47,16 @@ export class ProjectsComponent implements OnInit {
   githubProfile = 'https://github.com/joaquin9830';
 
   projectStats: ProjectStat[] = [
-    { value: '4+', label: 'Proyectos', icon: 'bi-folder' },
-    { value: '100%', label: 'Completados', icon: 'bi-check-circle' },
-    { value: '3', label: 'Tecnologías', icon: 'bi-code-slash' },
+    { value: '7+', label: 'Proyectos', icon: 'bi-folder' },
+    { value: '85%', label: 'Completados', icon: 'bi-check-circle' },
+    { value: '5', label: 'Tecnologías', icon: 'bi-code-slash' },
     { value: '2', label: 'Años', icon: 'bi-calendar' }
   ];
 
   categories: Category[] = [
     { id: 'all', name: 'Todos', icon: 'bi-grid-3x3' },
     { id: 'web', name: 'Web', icon: 'bi-globe' },
-    { id: 'desktop', name: 'Desktop', icon: 'bi-laptop' },
-    { id: 'mobile', name: 'Mobile', icon: 'bi-phone' }
+    { id: 'desktop', name: 'Desktop', icon: 'bi-laptop' }
   ];
 
   projects: Project[] = [
@@ -68,7 +67,7 @@ export class ProjectsComponent implements OnInit {
       github: 'https://github.com/joaquin9830/BackEndProyectofinal',
       category: 'web',
       technologies: ['Angular', 'Spring Boot', 'MySQL', 'TypeScript', 'Java'],
-      date: '2024',
+      date: '2022',
       status: 'completed',
       features: [
         'Autenticación de usuarios',
@@ -90,7 +89,7 @@ export class ProjectsComponent implements OnInit {
       features: [
         'Interfaz gráfica con Swing',
         'Gestión de reservas',
-        'Base de datos integrada',
+        'Base de datos MySQL',
         'Reportes y estadísticas',
         'Sistema de usuarios'
       ]
@@ -99,7 +98,7 @@ export class ProjectsComponent implements OnInit {
       title: 'Sitio Web JuniorTechTroopers',
       description: 'Sitio web corporativo desarrollado con Angular y Firebase, incluyendo CMS y autenticación.',
       image: 'assets/images/projects/project-3.png',
-      website: 'https://juniortechtroopers.com.ar/',
+      website: 'https://juniortechtrooper.web.app/',
       github: 'https://github.com/juniors-tech-troopers',
       category: 'web',
       technologies: ['Angular', 'Firebase', 'TypeScript', 'CSS3', 'HTML5'],
@@ -120,7 +119,7 @@ export class ProjectsComponent implements OnInit {
       github: 'https://github.com/CodeStrong2023/ProyectoPythonJuniorTechTroopers',
       category: 'desktop',
       technologies: ['Python', 'Tkinter', 'SQLite', 'Pandas'],
-      date: '2023',
+      date: '2024',
       status: 'completed',
       features: [
         'Interfaz con Tkinter',
@@ -128,6 +127,59 @@ export class ProjectsComponent implements OnInit {
         'Análisis de datos con Pandas',
         'Sistema de reportes',
         'Exportación de datos'
+      ]
+    },
+    {
+      title: 'Aplicación de Hospedajes Trooper Stay',
+      description: 'Aplicación full stack para gestión de hospedajes desarrollada con Angular, Java, Spring Boot y PostgreSQL.',
+      image: 'assets/images/projects/project-5.png',
+      website: 'https://trooper-stay.web.app/',
+      github: 'https://github.com/joaquin9830/trooper-stay-fullstack',
+      category: 'web',
+      technologies: ['Angular', 'Java', 'Spring Boot', 'PostgreSQL'],
+      date: '2024',
+      status: 'completed',
+      features: [
+        'Frontend con Angular',
+        'Backend con Spring Boot',
+        'Base de datos PostgreSQL',
+        'API REST completa',
+        'Autenticación JWT'
+      ]
+    },
+    {
+      title: 'Metanoiazen',
+      description: 'Landing page de servicios de sanación con diseño moderno y responsive para centros de bienestar.',
+      image: 'assets/images/projects/project-6.png',
+      github: 'https://github.com/joaquin9830/metanoia-landing',
+      website: 'https://metanoiazen.com.ar/',
+      category: 'web',
+      technologies: ['Angular', 'TypeScript', 'CSS3', 'Bootstrap'],
+      date: '2024',
+      status: 'completed',
+      features: [
+        'Diseño responsive',
+        'Animaciones suaves',
+        'Formularios de contacto',
+        'Optimización SEO',
+        'Carga rápida'
+      ]
+    },
+    {
+      title: 'Ponte Chida',
+      description: 'Landing page de tienda de ropa con integración de tienda nube. Actualmente en construcción.',
+      image: 'assets/images/projects/project-7.png',
+      github: 'https://github.com/joaquin9830/ponte-chida',
+      category: 'web',
+      technologies: ['React', 'Jsx', 'CSS3', ' Integración con Tienda Nube'],
+      date: '2025',
+      status: 'in-progress',
+      features: [
+        'Catálogo de productos',
+        'Integración con Shopify',
+        'Carrito de compras',
+        'Pagos en línea',
+        'Panel administrativo'
       ]
     }
   ];

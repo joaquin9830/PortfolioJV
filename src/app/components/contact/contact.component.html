@@ -1,4 +1,17 @@
+<!-- Sección Contacto Espectacular -->
 <section id="contact" class="contact-section">
+  <!-- Partículas de fondo -->
+  <div class="particles-container">
+    <div class="particle" *ngFor="let particle of particles"></div>
+  </div>
+  
+  <!-- Gradientes animados -->
+  <div class="section-background">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+  </div>
+
   <div class="contact-container">
     <div class="contact-grid">
       <!-- Información de contacto -->
@@ -16,7 +29,7 @@
             </div>
             <div class="contact-text">
               <h4>Email</h4>
-              <p>joaquin.vinolo@email.com</p>
+              <p>Contacto directo</p>
             </div>
           </div>
           
@@ -26,7 +39,7 @@
             </div>
             <div class="contact-text">
               <h4>Teléfono</h4>
-              <p>+54 9 11 1234-5678</p>
+              <p>Disponible por WhatsApp</p>
             </div>
           </div>
           
@@ -36,7 +49,7 @@
             </div>
             <div class="contact-text">
               <h4>Ubicación</h4>
-              <p>Buenos Aires, Argentina</p>
+              <p>Mendoza, Argentina</p>
             </div>
           </div>
           
@@ -54,13 +67,15 @@
       
       <!-- Formulario de contacto -->
       <div class="contact-form">
-        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit($event)">
+          
           <div class="form-row">
             <div class="form-group">
               <label for="name" class="form-label">Nombre *</label>
               <input
                 type="text"
                 id="name"
+                name="name"
                 formControlName="name"
                 class="form-input"
                 [class.error]="isFieldInvalid('name')"
@@ -78,6 +93,7 @@
               <input
                 type="email"
                 id="email"
+                name="email"
                 formControlName="email"
                 class="form-input"
                 [class.error]="isFieldInvalid('email')"
@@ -96,6 +112,7 @@
             <input
               type="text"
               id="subject"
+              name="subject"
               formControlName="subject"
               class="form-input"
               [class.error]="isFieldInvalid('subject')"
@@ -112,6 +129,7 @@
             <label for="message" class="form-label">Mensaje *</label>
             <textarea
               id="message"
+              name="message"
               formControlName="message"
               class="form-textarea"
               [class.error]="isFieldInvalid('message')"
@@ -129,19 +147,34 @@
             class="btn btn-primary btn-lg form-submit"
             [disabled]="isSubmitting"
           >
-            <span *ngIf="!isSubmitting">
+            <span *ngIf="!isSubmitting" class="btn-content">
               <i class="bi bi-send"></i>
               Enviar Mensaje
             </span>
-            <span *ngIf="isSubmitting">
-              <i class="bi bi-hourglass-split"></i>
+            <span *ngIf="isSubmitting" class="btn-content loading">
+              <div class="spinner"></div>
               Enviando...
             </span>
           </button>
           
           <div *ngIf="submitSuccess" class="success-message">
-            <i class="bi bi-check-circle"></i>
-            ¡Mensaje enviado correctamente! Te responderé pronto.
+            <div class="success-icon">
+              <i class="bi bi-check-circle-fill"></i>
+            </div>
+            <div class="success-content">
+              <h4>¡Mensaje Enviado!</h4>
+              <p>Gracias por contactarme. He recibido tu mensaje y te responderé en las próximas 24 horas.</p>
+            </div>
+          </div>
+          
+          <div *ngIf="submitError" class="error-message">
+            <div class="error-icon">
+              <i class="bi bi-exclamation-triangle-fill"></i>
+            </div>
+            <div class="error-content">
+              <h4>Error al Enviar</h4>
+              <p>Hubo un problema al enviar tu mensaje. Por favor, inténtalo de nuevo.</p>
+            </div>
           </div>
         </form>
       </div>
