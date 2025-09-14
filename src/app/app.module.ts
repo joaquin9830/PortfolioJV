@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
+// Removemos Lucide Angular para evitar conflictos
 
 
 //Inicio Services
 import {CargarScriptsService} from '../app/service/cargar-scripts.service';
+import {DevIconsService} from '../app/service/simple-icons.service';
 //Fin services
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,6 +27,8 @@ import { EducationUtnComponent } from './pages/education-utn/education-utn.compo
 import { ButtonScrollComponent } from './components/button-scroll/button-scroll.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { ServicesComponent } from './components/services/services.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { SimpleIconComponent } from './components/simple-icon/simple-icon.component';
 
 
 @NgModule({
@@ -43,17 +48,20 @@ import { ServicesComponent } from './components/services/services.component';
     ButtonScrollComponent,
     BannerComponent,
     ServicesComponent,
-   
-    
+    ContactComponent,
+    SimpleIconComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    // Removemos Lucide Angular
   ],
   providers: [
-    CargarScriptsService
+    CargarScriptsService,
+    DevIconsService
   ],
   bootstrap: [AppComponent]
 })

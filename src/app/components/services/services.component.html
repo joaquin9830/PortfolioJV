@@ -1,10 +1,89 @@
-<section class="services-section" id="services">
-  <h2 class="section-title">Servicios</h2>
-  <div class="services">
-    <div class="service-card" *ngFor="let service of services" data-aos="flip-left">
-      <img [src]="service.icon" alt="{{service.title}} icon" class="service-icon">
-      <h3 class="service-title">{{service.title}}</h3>
-      <p class="service-description">{{service.description}}</p>
+<!-- Sección Servicios Espectacular -->
+<section id="services" class="services-section">
+  <!-- Partículas de fondo -->
+  <div class="particles-container">
+    <div class="particle" *ngFor="let particle of particles"></div>
+  </div>
+  
+  <!-- Gradientes animados -->
+  <div class="section-background">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+  </div>
+
+  <div class="services-container">
+    <!-- Título con animación -->
+    <div class="section-header">
+      <h2 class="section-title">
+        <span class="title-text">Mis</span>
+        <span class="title-highlight">Servicios</span>
+      </h2>
+      <div class="title-underline"></div>
+      <p class="section-subtitle">
+        Soluciones tecnológicas completas para transformar tus ideas en realidad
+      </p>
+    </div>
+
+    <!-- Servicios principales -->
+    <div class="services-grid">
+      <div class="service-card" *ngFor="let service of services; let i = index">
+        <div class="card-background">
+          <div class="card-glow"></div>
+        </div>
+        
+        <div class="service-content">
+        <div class="service-icon-container">
+          <div class="icon-wrapper">
+            <i [class]="service.icon" class="service-icon"></i>
+            <div class="icon-pulse"></div>
+          </div>
+        </div>
+          
+          <div class="service-info">
+            <h3 class="service-title">{{ service.title }}</h3>
+            <p class="service-description">{{ service.description }}</p>
+            
+            <div class="service-features">
+              <div class="feature" *ngFor="let feature of service.features">
+                <i class="bi bi-check-circle"></i>
+                <span>{{ feature }}</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="service-footer">
+            <div class="service-tech">
+              <span class="tech-label">Tecnologías:</span>
+              <div class="tech-tags">
+                <span class="tech-tag" *ngFor="let tech of service.technologies">
+                  {{ tech }}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card-hover-effect"></div>
+      </div>
+    </div>
+
+    <!-- Call to action -->
+    <div class="services-cta">
+      <div class="cta-content">
+        <h3>¿Necesitas una solución personalizada?</h3>
+        <p>Cuéntame sobre tu proyecto y trabajemos juntos para hacerlo realidad</p>
+        <div class="cta-buttons">
+          <a href="#contact" class="btn btn-primary btn-lg">
+            <i class="bi bi-envelope"></i>
+            <span>Hablemos de tu proyecto</span>
+          </a>
+          <a href="#projects" class="btn btn-outline btn-lg">
+            <i class="bi bi-folder"></i>
+            <span>Ver mis trabajos</span>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </section>

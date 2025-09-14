@@ -1,29 +1,142 @@
-<section id="about-me" >
-    <div class="about-me-content" data-aos="zoom-in">
-        <h2 class="about-me-title">Acerca de mí</h2>
-        <p class="about-me-description">
-            ¡Hola! 👋 Soy Joaquín Viñolo, un apasionado desarrollador de 25 años. Disfruto aprendiendo y perfeccionando
-            mis habilidades en programación.
+<!-- Sección Sobre Mí Espectacular -->
+<section id="about" class="about-section">
+  <!-- Partículas de fondo -->
+  <div class="particles-container">
+    <div class="particle" *ngFor="let particle of particles"></div>
+  </div>
+  
+  <!-- Gradientes animados -->
+  <div class="section-background">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+  </div>
 
-        </p>
-        <p class="about-me-description">
-            <strong>Mis conocimientos</strong><br>
-            🚀 <strong>Desarrollo Full Stack:</strong> Me inicié en la lógica de programación y me especialicé en
-            desarrollo web. Completé un curso de Desarrollo Web Full Stack y un curso específico de desarrollo frontend.
-        </p>
-        <p class="about-me-description">
-        <strong>💻 Proyectos y Experiencia:</strong><br>
-         He trabajado en aplicaciones backend utilizando Java y Spring Boot,
-            creado interfaces de usuario con Angular y gestionado bases de datos con MySQL. Estos proyectos me han
-            permitido desarrollar soluciones completas y funcionales, abarcando desde el diseño de la interfaz hasta
-            la administración del backend.
-        </p>
-
-
-        <p class="about-me-description">
-            Estoy buscando oportunidades laborales y colaboraciones en proyectos interesantes. Si compartes intereses o
-            tienes una oportunidad adecuada para mi perfil, ¡me encantaría conectar contigo!
-        </p>
-        <a href="../../../assets/document/Programador CV Joaquín Viñolo.pdf.pdf" class="download-cv-button" download>Descargar CV</a>
+  <div class="about-container">
+    <!-- Título con animación -->
+    <div class="section-header">
+      <h2 class="section-title">
+        <span class="title-text">Sobre</span>
+        <span class="title-highlight">Mí</span>
+      </h2>
+      <div class="title-underline"></div>
     </div>
+
+    <div class="about-content">
+      <!-- Información principal -->
+      <div class="about-main">
+        <div class="about-text">
+          <div class="greeting-card">
+            <div class="greeting-icon">👋</div>
+            <div class="greeting-text">
+              <h3>¡Hola! Soy Joaquín</h3>
+              <p class="role">Desarrollador Full Stack en In Motion</p>
+            </div>
+          </div>
+
+          <div class="description-card">
+            <p class="main-description">
+              Desarrollador <span class="highlight">Full Stack</span> especializado en 
+              <span class="highlight">arquitectura hexagonal</span> y 
+              <span class="highlight">microservicios serverless</span> en AWS Lambda. 
+              En <span class="highlight">In Motion</span> diseño soluciones escalables 
+              con Python 3.12, Angular 18+ y tecnologías cloud avanzadas, 
+              transformando requerimientos complejos en sistemas robustos.
+            </p>
+          </div>
+
+          <!-- Estadísticas animadas -->
+          <div class="stats-grid">
+            <div class="stat-card" *ngFor="let stat of stats">
+              <div class="stat-icon">
+                <i [class]="stat.icon"></i>
+              </div>
+              <div class="stat-content">
+                <div class="stat-number">{{ stat.value }}</div>
+                <div class="stat-label">{{ stat.label }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Imagen de perfil con efectos -->
+        <div class="about-image">
+          <div class="image-container">
+            <img src="../../../assets/images/about-me/Foto.png" 
+                 alt="Joaquín Viñolo" 
+                 class="profile-image">
+            <div class="image-glow"></div>
+            <div class="floating-badges">
+              <div class="badge" *ngFor="let badge of floatingBadges">
+                <i [class]="badge.icon"></i>
+                <span>{{ badge.text }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experiencia y habilidades -->
+      <div class="experience-section">
+        <div class="experience-card">
+          <div class="card-header">
+            <i class="bi bi-cloud"></i>
+            <h3>Arquitectura Cloud & AWS</h3>
+          </div>
+          <p class="card-description">
+            Especializado en <span class="highlight">arquitectura hexagonal</span> y 
+            <span class="highlight">microservicios serverless</span> en AWS Lambda. 
+            Experiencia en <span class="highlight">Python 3.12</span>, 
+            <span class="highlight">PyPDF</span>, <span class="highlight">API Gateway</span> 
+            y <span class="highlight">Custom Layers</span>.
+          </p>
+        </div>
+
+        <div class="experience-card">
+          <div class="card-header">
+            <i class="bi bi-plug"></i>
+            <h3>Integraciones Corporativas</h3>
+          </div>
+          <p class="card-description">
+            Experiencia en integraciones complejas con 
+            <span class="highlight">BeAware360 APIs</span>, <span class="highlight">WSO2 OAuth2</span>, 
+            <span class="highlight">Maestro Distribuidores</span> y 
+            <span class="highlight">Componente Validador</span>.
+          </p>
+        </div>
+
+        <div class="experience-card">
+          <div class="card-header">
+            <i class="bi bi-people"></i>
+            <h3>Comunicación & Liderazgo</h3>
+          </div>
+          <p class="card-description">
+            Trabajo directo con <span class="highlight">stakeholders de negocio</span>, 
+            facilitación de <span class="highlight">workshops</span>, 
+            <span class="highlight">demos</span> y traducción de necesidades 
+            técnicas a requerimientos claros.
+          </p>
+        </div>
+      </div>
+
+      <!-- Call to action -->
+      <div class="about-cta">
+        <div class="cta-content">
+          <h3>¿Interesado en colaborar?</h3>
+          <p>Estoy abierto a nuevas oportunidades y proyectos desafiantes</p>
+          <div class="cta-buttons">
+            <a href="#contact" class="btn btn-primary btn-lg">
+              <i class="bi bi-envelope"></i>
+              <span>Contactar</span>
+            </a>
+            <a href="../../../assets/document/Programador CV Joaquín Viñolo.pdf.pdf" 
+               class="btn btn-outline btn-lg" 
+               download>
+              <i class="bi bi-download"></i>
+              <span>Descargar CV</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

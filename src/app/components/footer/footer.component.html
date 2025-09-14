@@ -1,17 +1,129 @@
-<!-- footer.component.html -->
+<!-- Footer profesional moderno -->
 <footer class="footer-section">
-    <div class="container">
-      <p>&copy; 2024 Joaquín Viñolo. Todos los derechos reservados.</p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/joaquin-vinolo98/" target="_blank">
-          <i class="bi bi-linkedin"></i>
-        </a>
-        <a href="https://github.com/joaquin9830" target="_blank">
-          <i class="bi bi-github"></i>
-        </a>
-        <a href="mailto:joaquin9811@gmail.com" target="_blank">
-          <i class="bi bi-envelope"></i>
-        </a>        
+  <div class="footer-container">
+    <!-- Línea decorativa superior -->
+    <div class="footer-divider"></div>
+    
+    <!-- Contenido principal del footer -->
+    <div class="footer-content">
+      <!-- Información personal -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="../../../assets/icons/hero/hero.png" alt="Joaquín Viñolo" class="logo-img">
+          <div class="brand-text">
+            <h3 class="brand-name">Joaquín Viñolo</h3>
+            <p class="brand-title">Full Stack Developer</p>
+          </div>
+        </div>
+        <p class="brand-description">
+          Desarrollador apasionado por crear experiencias digitales excepcionales 
+          y soluciones innovadoras que marquen la diferencia.
+        </p>
+      </div>
+
+      <!-- Enlaces rápidos -->
+      <div class="footer-links">
+        <h4 class="links-title">Navegación</h4>
+        <ul class="links-list">
+          <li><a href="#about" class="footer-link">Sobre Mí</a></li>
+          <li><a href="#services" class="footer-link">Servicios</a></li>
+          <li><a href="#education" class="footer-link">Educación</a></li>
+          <li><a href="#skills" class="footer-link">Habilidades</a></li>
+          <li><a href="#projects" class="footer-link">Proyectos</a></li>
+          <li><a href="#contact" class="footer-link">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Servicios -->
+      <div class="footer-services">
+        <h4 class="services-title">Servicios</h4>
+        <ul class="services-list">
+          <li><span class="service-item">Desarrollo Web</span></li>
+          <li><span class="service-item">Aplicaciones Móviles</span></li>
+          <li><span class="service-item">Consultoría Técnica</span></li>
+          <li><span class="service-item">UI/UX Design</span></li>
+        </ul>
+      </div>
+
+      <!-- Contacto y redes sociales -->
+      <div class="footer-contact">
+        <h4 class="contact-title">Conecta Conmigo</h4>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="bi bi-envelope-fill contact-icon"></i>
+            <span class="contact-text">joaquin9811@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <i class="bi bi-geo-alt-fill contact-icon"></i>
+            <span class="contact-text">Buenos Aires, Argentina</span>
+          </div>
+        </div>
+        
+        <!-- Redes sociales -->
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/joaquin-vinolo98/" 
+             target="_blank" 
+             class="social-link linkedin"
+             aria-label="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+            <span class="social-tooltip">LinkedIn</span>
+          </a>
+          <a href="https://github.com/joaquin9830" 
+             target="_blank" 
+             class="social-link github"
+             aria-label="GitHub">
+            <i class="bi bi-github"></i>
+            <span class="social-tooltip">GitHub</span>
+          </a>
+          <a href="mailto:joaquin9811@gmail.com" 
+             class="social-link email"
+             aria-label="Email">
+            <i class="bi bi-envelope-fill"></i>
+            <span class="social-tooltip">Email</span>
+          </a>
+          <a href="https://wa.me/5491112345678" 
+             target="_blank" 
+             class="social-link whatsapp"
+             aria-label="WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+            <span class="social-tooltip">WhatsApp</span>
+          </a>
+        </div>
       </div>
     </div>
-  </footer>
+
+    <!-- Newsletter signup -->
+    <div class="newsletter-section">
+      <div class="newsletter-content">
+        <h4 class="newsletter-title">¿Interesado en trabajar juntos?</h4>
+        <p class="newsletter-description">Recibe actualizaciones sobre mis proyectos y oportunidades de colaboración.</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Tu email" class="newsletter-input">
+          <button class="newsletter-btn">
+            <i class="bi bi-send"></i>
+            Suscribirse
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer bottom -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-content">
+        <div class="copyright">
+          <p>&copy; 2024 Joaquín Viñolo. Todos los derechos reservados.</p>
+        </div>
+        <div class="footer-legal">
+          <a href="#" class="legal-link">Política de Privacidad</a>
+          <a href="#" class="legal-link">Términos de Uso</a>
+          <a href="#" class="legal-link">Cookies</a>
+        </div>
+        <div class="footer-tech">
+          <span class="tech-text">Hecho con</span>
+          <i class="bi bi-heart-fill tech-icon"></i>
+          <span class="tech-text">y Angular</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

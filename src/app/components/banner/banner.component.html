@@ -1,16 +1,101 @@
-<section id="banner">
-    <div class="banner-content">
-        <h1 class="banner-title">Joaquín Viñolo</h1>
-        <h2 class="banner-subtitle"><span class="highlight-full">Full</span> <span class="highlight-stack">Stack</span> Developer</h2>
-        <img src="../../../assets/images/about-me/Foto.png" class="profile-pic" alt="Perfil">
-        <div class="tags-container">
-            <span class="tag">Frontend</span>
-            <span class="tag">Backend</span>
-            <span class="tag">Database</span>
-            <span class="tag">Angular</span>
-            <span class="tag">Java</span>
-            <span class="tag">MySQL</span>
+<!-- Hero Section Espectacular -->
+<section id="banner" class="hero-section">
+  <!-- Partículas de fondo -->
+  <div class="particles-container">
+    <div class="particle" *ngFor="let particle of particles"></div>
+  </div>
+  
+  <!-- Gradiente animado de fondo -->
+  <div class="hero-background">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="hero-container">
+    <div class="hero-content">
+      <!-- Texto principal con animaciones -->
+      <div class="hero-text">
+        <div class="greeting">
+          <span class="greeting-text">¡Hola! Soy</span>
+          <div class="cursor-blink">|</div>
         </div>
-        <a class="banner-button" href="#about-me">Conóceme</a>
+        
+        <h1 class="hero-title">
+          <span class="title-line">Joaquín</span>
+          <span class="title-line">Viñolo</span>
+        </h1>
+        
+        <div class="hero-subtitle">
+          <span class="subtitle-text">Desarrollador</span>
+          <div class="typing-text">
+            <span class="typing-word" *ngFor="let word of typingWords; let i = index" 
+                  [class.active]="currentWordIndex === i">
+              {{ word }}
+            </span>
+          </div>
+        </div>
+        
+        <p class="hero-description">
+          Desarrollador <span class="highlight">Full Stack</span> especializado en 
+          <span class="highlight">arquitectura hexagonal</span> y 
+          <span class="highlight">microservicios serverless</span> en AWS Lambda. 
+          En <span class="highlight">In Motion</span> diseño soluciones escalables 
+          con <span class="highlight">Python 3.12</span>, <span class="highlight">Angular 18+</span> 
+          y tecnologías cloud avanzadas.
+        </p>
+      </div>
+
+      <!-- Imagen de perfil con efectos 3D -->
+      <div class="hero-image">
+        <div class="image-container">
+          <img src="../../../assets/images/about-me/Foto.png" 
+               class="profile-image" 
+               alt="Joaquín Viñolo">
+          <div class="image-glow"></div>
+          <div class="floating-elements">
+            <div class="floating-icon" *ngFor="let icon of floatingIcons">
+              <i [class]="icon.class"></i>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- Tags de tecnologías -->
+    <div class="tech-tags">
+      <div class="tag" *ngFor="let tech of technologies; let i = index">
+        <i [class]="tech.icon"></i>
+        <span>{{ tech.name }}</span>
+      </div>
+    </div>
+
+    <!-- Botones de acción -->
+    <div class="hero-actions">
+      <a href="#about" class="btn btn-primary btn-lg primary-action">
+        <i class="bi bi-person"></i>
+        <span>Conóceme</span>
+        <div class="btn-ripple"></div>
+      </a>
+      
+      <a href="#projects" class="btn btn-outline btn-lg secondary-action">
+        <i class="bi bi-folder"></i>
+        <span>Ver Proyectos</span>
+      </a>
+      
+      <a href="#contact" class="btn btn-ghost btn-lg contact-action">
+        <i class="bi bi-envelope"></i>
+        <span>Contactar</span>
+      </a>
+    </div>
+
+    <!-- Indicador de scroll -->
+    <div class="scroll-indicator">
+      <div class="scroll-text">Desplázate</div>
+      <div class="scroll-arrow">
+        <i class="bi bi-chevron-down"></i>
+      </div>
+    </div>
+  </div>
 </section>

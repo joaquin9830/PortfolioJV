@@ -1,0 +1,176 @@
+/* Estilos específicos del componente de contacto */
+.contact-section {
+  position: relative;
+}
+
+.contact-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23667eea" stroke-width="0.5" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.contact-container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Animaciones de entrada */
+.contact-info {
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.contact-form {
+  animation: slideInRight 0.8s ease-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Efectos hover mejorados */
+.contact-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.1), transparent);
+  transition: left var(--transition-slow);
+}
+
+.contact-item:hover::before {
+  left: 100%;
+}
+
+/* Estados del formulario */
+.form-input:focus,
+.form-textarea:focus {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow), var(--shadow-lg);
+}
+
+/* Botón de envío con estado de carga */
+.btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+.btn:disabled:hover {
+  transform: none !important;
+  box-shadow: var(--shadow-lg);
+}
+
+/* Mensajes de estado */
+.success-message {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid #10b981;
+  border-radius: var(--border-radius-lg);
+  padding: var(--space-4);
+  margin-top: var(--space-4);
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.error-message {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+/* Responsive mejorado */
+@media (max-width: 1024px) {
+  .contact-grid {
+    gap: var(--space-12);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: var(--space-16) 0;
+  }
+  
+  .contact-info h2 {
+    font-size: var(--text-3xl);
+    text-align: center;
+  }
+  
+  .contact-info p {
+    text-align: center;
+  }
+  
+  .contact-details {
+    gap: var(--space-4);
+  }
+  
+  .contact-item {
+    padding: var(--space-3);
+  }
+  
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+    font-size: var(--text-lg);
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 0 var(--space-3);
+  }
+  
+  .contact-form {
+    padding: var(--space-4);
+  }
+  
+  .form-input,
+  .form-textarea {
+    padding: var(--space-3);
+  }
+}
+
+

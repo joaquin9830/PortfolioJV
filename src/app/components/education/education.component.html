@@ -1,36 +1,216 @@
-<section id="education">
-    <div class="container">
-        <h2 class="section-title">Educación it</h2>
-        <div class="timeline">
-            <div class="timeline-item left" data-aos="zoom-in" id="education-utn">
-                <div class="timeline-content">
-                    <i class="bi bi-mortarboard-fill timeline-icon"></i>
-                    <h3 class="timeline-place">Universidad Tecnológica Nacional</h3>
-                    <p class="timeline-degree">Técnico Universitario en Programación</p>
-                    <small class="timeline-date">2023-2024</small>
-                    <a (click)="educationUtn()" class="btn btn-primary timeline-button">Saber Más</a>
-                </div>
-            </div>
-            <div class="timeline-item right" data-aos="zoom-in" id="education-alura">
-                <div class="timeline-content">
-                    <i class="bi bi-mortarboard-fill timeline-icon"></i>
-                    <h3 class="timeline-place">Alura</h3>
-                    <p class="timeline-degree">Desarrollador Frontend</p>
-                    <small class="timeline-date">2023</small>
-                    <a (click)="educationAlura()" class="btn btn-primary timeline-button">Saber Más</a>
-                </div>
-            </div>
-            <div class="timeline-item left" data-aos="zoom-in" id="education-detail">
-                <div class="timeline-content">
-                    <i class="bi bi-mortarboard-fill timeline-icon"></i>
-                    <h3 class="timeline-place">Argentina Programa</h3>
-                    <p class="timeline-degree">Desarrollador Web Full Stack</p>
-                    <small class="timeline-date">2021-2022</small>
-                    <a (click)="educationDetail()" class="btn btn-primary timeline-button">Saber Más</a>
-                </div>
-            </div>
+<!-- Sección Educación Espectacular -->
+<section id="education" class="education-section">
+  <!-- Partículas de fondo -->
+  <div class="particles-container">
+    <div class="particle" *ngFor="let particle of particles"></div>
+  </div>
+  
+  <!-- Gradientes animados -->
+  <div class="section-background">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+  </div>
 
-
-        </div>
+  <div class="education-container">
+    <!-- Título con animación -->
+    <div class="section-header">
+      <h2 class="section-title">
+        <span class="title-text">Mi</span>
+        <span class="title-highlight">Educación</span>
+      </h2>
+      <div class="title-underline"></div>
+      <p class="section-subtitle">
+        Un viaje de aprendizaje continuo que me ha llevado a dominar las tecnologías más demandadas
+      </p>
     </div>
+
+    <!-- Timeline animado -->
+    <div class="timeline-container">
+      <div class="timeline-line"></div>
+      
+      <!-- Item 1: UTN -->
+      <div class="timeline-item" [class.animate]="isVisible">
+        <div class="timeline-marker">
+          <div class="marker-icon">
+            <i class="bi bi-mortarboard-fill"></i>
+          </div>
+          <div class="marker-pulse"></div>
+        </div>
+        
+        <div class="timeline-content">
+          <div class="content-card">
+            <div class="card-header">
+              <div class="institution-info">
+                <h3 class="institution-name">Universidad Tecnológica Nacional</h3>
+                <div class="degree-badge">Técnico Universitario</div>
+              </div>
+              <div class="date-badge">
+                <span class="date-text">2023 - 2024</span>
+              </div>
+            </div>
+            
+            <div class="card-body">
+              <h4 class="degree-title">Técnico Universitario en Programación</h4>
+              <p class="degree-description">
+                Formación universitaria especializada en programación, algoritmos y estructuras de datos. 
+                Base sólida en fundamentos de la ingeniería de software.
+              </p>
+              
+              <div class="skills-learned">
+                <h5>Habilidades desarrolladas:</h5>
+                <div class="skills-tags">
+                  <span class="skill-tag">Algoritmos</span>
+                  <span class="skill-tag">Estructuras de Datos</span>
+                  <span class="skill-tag">Programación Orientada a Objetos</span>
+                  <span class="skill-tag">Java</span>
+                  <span class="skill-tag">C++</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card-footer">
+              <a (click)="educationUtn()" class="btn btn-primary btn-sm">
+                <i class="bi bi-arrow-right"></i>
+                <span>Ver detalles</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2: Alura -->
+      <div class="timeline-item" [class.animate]="isVisible">
+        <div class="timeline-marker">
+          <div class="marker-icon">
+            <i class="bi bi-code-slash"></i>
+          </div>
+          <div class="marker-pulse"></div>
+        </div>
+        
+        <div class="timeline-content">
+          <div class="content-card">
+            <div class="card-header">
+              <div class="institution-info">
+                <h3 class="institution-name">Alura</h3>
+                <div class="degree-badge">Frontend</div>
+              </div>
+              <div class="date-badge">
+                <span class="date-text">2023</span>
+              </div>
+            </div>
+            
+            <div class="card-body">
+              <h4 class="degree-title">Desarrollador Frontend</h4>
+              <p class="degree-description">
+                Especialización en desarrollo frontend moderno con Angular, TypeScript y las mejores 
+                prácticas de desarrollo web responsivo.
+              </p>
+              
+              <div class="skills-learned">
+                <h5>Habilidades desarrolladas:</h5>
+                <div class="skills-tags">
+                  <span class="skill-tag">Angular</span>
+                  <span class="skill-tag">TypeScript</span>
+                  <span class="skill-tag">HTML5</span>
+                  <span class="skill-tag">CSS3</span>
+                  <span class="skill-tag">Responsive Design</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card-footer">
+              <a (click)="educationAlura()" class="btn btn-primary btn-sm">
+                <i class="bi bi-arrow-right"></i>
+                <span>Ver detalles</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3: Argentina Programa -->
+      <div class="timeline-item" [class.animate]="isVisible">
+        <div class="timeline-marker">
+          <div class="marker-icon">
+            <i class="bi bi-laptop"></i>
+          </div>
+          <div class="marker-pulse"></div>
+        </div>
+        
+        <div class="timeline-content">
+          <div class="content-card">
+            <div class="card-header">
+              <div class="institution-info">
+                <h3 class="institution-name">Argentina Programa</h3>
+                <div class="degree-badge">Full Stack</div>
+              </div>
+              <div class="date-badge">
+                <span class="date-text">2021 - 2022</span>
+              </div>
+            </div>
+            
+            <div class="card-body">
+              <h4 class="degree-title">Desarrollador Web Full Stack</h4>
+              <p class="degree-description">
+                Programa integral de desarrollo web full stack, cubriendo desde fundamentos de 
+                programación hasta desarrollo de aplicaciones completas.
+              </p>
+              
+              <div class="skills-learned">
+                <h5>Habilidades desarrolladas:</h5>
+                <div class="skills-tags">
+                  <span class="skill-tag">JavaScript</span>
+                  <span class="skill-tag">React</span>
+                  <span class="skill-tag">Node.js</span>
+                  <span class="skill-tag">MySQL</span>
+                  <span class="skill-tag">Git</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card-footer">
+              <a (click)="educationDetail()" class="btn btn-primary btn-sm">
+                <i class="bi bi-arrow-right"></i>
+                <span>Ver detalles</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Estadísticas de educación -->
+    <div class="education-stats">
+      <div class="stat-card" *ngFor="let stat of educationStats">
+        <div class="stat-icon">
+          <i [class]="stat.icon"></i>
+        </div>
+        <div class="stat-content">
+          <div class="stat-number">{{ stat.value }}</div>
+          <div class="stat-label">{{ stat.label }}</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to action -->
+    <div class="education-cta">
+      <div class="cta-content">
+        <h3>¿Interesado en mi formación?</h3>
+        <p>Descarga mi CV para ver todos mis certificados y logros académicos</p>
+        <div class="cta-buttons">
+          <a href="../../../assets/document/Programador CV Joaquín Viñolo.pdf.pdf" 
+             class="btn btn-primary btn-lg" 
+             download>
+            <i class="bi bi-download"></i>
+            <span>Descargar CV</span>
+          </a>
+          <a href="#contact" class="btn btn-outline btn-lg">
+            <i class="bi bi-envelope"></i>
+            <span>Contactar</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

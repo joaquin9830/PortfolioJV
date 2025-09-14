@@ -7,18 +7,27 @@
   background: rgb(35, 113, 231);
   color: white;
   border: 2px solid transparent;
-  padding: 5px 20px;
-  border-radius: 30px;
-  
+  padding: 12px 15px;
+  border-radius: 50px;
+  z-index: 9999; /* Asegura que esté sobre todo lo demás */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 18px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-button:hover{
-  background: solid;
-  border: 2px solid rgb(134, 144, 240);
-  cursor: pointer;
+.back-to-top-button:hover {
+  background: rgb(134, 144, 240);
+  border: 2px solid rgb(35, 113, 231);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 .show-button {
-    display: block;
-  }
+  display: flex !important;
+}

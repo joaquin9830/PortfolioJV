@@ -1,21 +1,200 @@
-<!-- projects.component.html -->
-<div class="projects-section">
-  <h1>Proyectos</h1>
-  <div class="projects-container" data-aos="zoom-in">
-    <div class="project-box" *ngFor="let project of projects; let i = index" [class.hidden]="i >= 9">
-      <img [src]="project.image" alt="{{ project.title }}">
-      <div class="project-info">
-        <h3>{{ project.title }}</h3>
-        <p>{{ project.description }}</p>
-        <div class="icon-links">
-          <a *ngIf="project.website" href="{{ project.website }}" target="_blank">
-            <i class="bi bi-globe"></i>
+<!-- Sección Proyectos Espectacular -->
+<section id="projects" class="projects-section">
+  <!-- Partículas de fondo -->
+  <div class="particles-container">
+    <div class="particle" *ngFor="let particle of particles"></div>
+  </div>
+  
+  <!-- Gradientes animados -->
+  <div class="section-background">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+  </div>
+
+  <div class="projects-container">
+    <!-- Título con animación -->
+    <div class="section-header">
+      <h2 class="section-title">
+        <span class="title-text">Mis</span>
+        <span class="title-highlight">Proyectos</span>
+      </h2>
+      <div class="title-underline"></div>
+      <p class="section-subtitle">
+        Una selección de mis trabajos más destacados que demuestran mi experiencia y creatividad
+      </p>
+    </div>
+
+    <!-- Estadísticas de proyectos -->
+    <div class="projects-stats">
+      <div class="stat-card" *ngFor="let stat of projectStats">
+        <div class="stat-icon">
+          <i [class]="stat.icon"></i>
+        </div>
+        <div class="stat-content">
+          <div class="stat-number">{{ stat.value }}</div>
+          <div class="stat-label">{{ stat.label }}</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Filtros de categorías -->
+    <div class="project-filters">
+      <button 
+        class="filter-btn" 
+        *ngFor="let category of categories" 
+        [class.active]="activeCategory === category.id"
+        (click)="filterProjects(category.id)">
+        <i [class]="category.icon"></i>
+        <span>{{ category.name }}</span>
+      </button>
+    </div>
+
+    <!-- Grid de proyectos -->
+    <div class="projects-grid">
+      <div class="project-card" 
+           *ngFor="let project of filteredProjects; let i = index"
+           [class.animate]="isVisible"
+           [style.animation-delay]="(i * 0.1) + 's'">
+        
+        <!-- Imagen del proyecto -->
+        <div class="project-image-container">
+          <img [src]="project.image" 
+               [alt]="project.title" 
+               class="project-image">
+          <div class="project-overlay">
+            <div class="project-actions">
+              <a *ngIf="project.website" 
+                 [href]="project.website" 
+                 target="_blank" 
+                 class="action-btn website-btn"
+                 title="Ver sitio web">
+                <i class="bi bi-globe"></i>
+              </a>
+              <a [href]="project.github" 
+                 target="_blank" 
+                 class="action-btn github-btn"
+                 title="Ver código">
+                <i class="bi bi-github"></i>
+              </a>
+              <button class="action-btn details-btn"
+                      (click)="openProjectModal(project)"
+                      title="Ver detalles">
+                <i class="bi bi-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+        <!-- Información del proyecto -->
+        <div class="project-content">
+          <div class="project-header">
+            <h3 class="project-title">{{ project.title }}</h3>
+            <div class="project-badge" [class]="'badge-' + project.category">
+              {{ getCategoryName(project.category) }}
+            </div>
+          </div>
+          
+          <p class="project-description">{{ project.description }}</p>
+          
+          <!-- Tecnologías utilizadas -->
+          <div class="project-tech">
+            <span class="tech-tag" 
+                  *ngFor="let tech of project.technologies">
+              {{ tech }}
+            </span>
+          </div>
+
+          <!-- Fecha y estado -->
+          <div class="project-meta">
+            <div class="project-date">
+              <i class="bi bi-calendar"></i>
+              <span>{{ project.date }}</span>
+            </div>
+            <div class="project-status" [class]="'status-' + project.status">
+              <i class="bi bi-circle-fill"></i>
+              <span>{{ project.status === 'completed' ? 'Completado' : 'En desarrollo' }}</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Efecto hover -->
+        <div class="project-hover-effect"></div>
+      </div>
+    </div>
+
+    <!-- Call to action -->
+    <div class="projects-cta">
+      <div class="cta-content">
+        <h3>¿Te interesa colaborar en un proyecto?</h3>
+        <p>Estoy siempre abierto a nuevas oportunidades y proyectos desafiantes</p>
+        <div class="cta-buttons">
+          <a href="#contact" class="btn btn-primary btn-lg">
+            <i class="bi bi-envelope"></i>
+            <span>Contactar</span>
           </a>
-          <a href="{{ project.github }}" target="_blank">
+          <a [href]="githubProfile" target="_blank" class="btn btn-outline btn-lg">
             <i class="bi bi-github"></i>
+            <span>Ver GitHub</span>
           </a>
         </div>
       </div>
     </div>
   </div>
-</div>
+
+  <!-- Modal de proyecto -->
+  <div class="project-modal" [class.active]="selectedProject" (click)="closeProjectModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()" *ngIf="selectedProject">
+      <button class="modal-close" (click)="closeProjectModal()">
+        <i class="bi bi-x"></i>
+      </button>
+      
+      <div class="modal-header">
+        <img [src]="selectedProject.image" [alt]="selectedProject.title" class="modal-image">
+        <div class="modal-info">
+          <h3 class="modal-title">{{ selectedProject.title }}</h3>
+          <div class="modal-badge" [class]="'badge-' + selectedProject.category">
+            {{ getCategoryName(selectedProject.category) }}
+          </div>
+        </div>
+      </div>
+      
+      <div class="modal-body">
+        <p class="modal-description">{{ selectedProject.description }}</p>
+        
+        <div class="modal-tech">
+          <h4>Tecnologías utilizadas:</h4>
+          <div class="tech-tags">
+            <span class="tech-tag" *ngFor="let tech of selectedProject.technologies">
+              {{ tech }}
+            </span>
+          </div>
+        </div>
+        
+        <div class="modal-features" *ngIf="selectedProject.features">
+          <h4>Características principales:</h4>
+          <ul>
+            <li *ngFor="let feature of selectedProject.features">{{ feature }}</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="modal-footer">
+        <a *ngIf="selectedProject.website" 
+           [href]="selectedProject.website" 
+           target="_blank" 
+           class="btn btn-primary">
+          <i class="bi bi-globe"></i>
+          <span>Ver sitio web</span>
+        </a>
+        <a [href]="selectedProject.github" 
+           target="_blank" 
+           class="btn btn-outline">
+          <i class="bi bi-github"></i>
+          <span>Ver código</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

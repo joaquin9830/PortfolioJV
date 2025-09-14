@@ -1,50 +1,77 @@
-<section>
-    <div id="header">
-        <nav class="navbar navbar-expand-lg navbar-custom">
-            <div class="container-fluid">
-                <a class="navbar-brand"><img src="../../../assets/icons/hero/hero.png" class="logo-brand" alt="logo"
-                        width="120px" /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto">
+<!-- Header profesional con navegación avanzada -->
+<header class="header-section" [class.scrolled]="isScrolled">
+  <!-- Barra de progreso de scroll -->
+  <div class="scroll-progress" [style.width.%]="scrollProgress"></div>
+  
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <!-- Logo con animación -->
+      <a class="navbar-brand" href="#home" (click)="scrollToSection('home')">
+        <div class="brand-container">
+          <img src="../../../assets/icons/hero/hero.png" class="logo-brand" alt="Joaquín Viñolo">
+          <div class="brand-text">
+            <span class="brand-name">Joaquín</span>
+            <span class="brand-surname">Viñolo</span>
+          </div>
+        </div>
+      </a>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about-me">Acerca de</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">Servicios</a>
-                        </li>
+      <!-- Toggle móvil -->
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation"
+        (click)="toggleMobileMenu()"
+      >
+        <span class="hamburger">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </span>
+      </button>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#education">Educación</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Habilidades</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Proyectos</a>
-                        </li>
-                    </ul>
+      <div class="collapse navbar-collapse" id="navbarNav" [class.show]="mobileMenuOpen">
+        <!-- Navegación principal -->
+        <ul class="navbar-nav nav-main">
+          <li class="nav-item" *ngFor="let item of navItems; let i = index">
+            <a 
+              class="nav-link" 
+              [href]="item.href"
+              [class.active]="activeSection === item.id"
+              (click)="setActiveSection(item.id)"
+            >
+              <i [class]="item.icon" class="nav-icon"></i>
+              <span class="nav-text">{{ item.label }}</span>
+              <div class="nav-indicator"></div>
+            </a>
+          </li>
+        </ul>
 
-                    <div>
-                        <ul class="navbar-nav sm-icons">                            
-                            <li>
-                                <a class="nav-link"
-                                    href="https://www.linkedin.com/in/joaqu%C3%ADn-vi%C3%B1olo-833327239/"
-                                    target="_blank"><i class="bi bi-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="https://github.com/joaquin9830" target="_blank"><i
-                                        class="bi bi-github"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+        <!-- Controles del header -->
+        <div class="header-controls">
+          <!-- Toggle de modo oscuro -->
+          <button 
+            class="theme-toggle" 
+            (click)="toggleTheme()"
+            [attr.aria-label]="isDarkMode ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'"
+          >
+            <div class="theme-toggle-slider">
+              <i class="bi bi-sun theme-toggle-icon sun"></i>
+              <i class="bi bi-moon theme-toggle-icon moon"></i>
             </div>
-        </nav>
+          </button>
+          
+          <!-- Botón de contacto -->
+          <a href="#contact" class="btn btn-primary btn-sm contact-btn">
+            <i class="bi bi-envelope"></i>
+            <span>Contacto</span>
+          </a>
+        </div>
+      </div>
     </div>
-</section>
+  </nav>
+</header>
